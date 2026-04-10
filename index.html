@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <meta name="description" content="SEO Genius Chatbot: Your interactive assistant to learn everything about Search Engine Optimization. Covers keywords, backlinks, technical SEO, and more.">
-  <meta name="keywords" content="SEO, chatbot, learn SEO, SEO questions, search engine optimization, SEO assistant, digital marketing">
-  <meta name="author" content="SEO Genius">
-  <meta property="og:title" content="SEO Genius Chatbot - Master SEO with AI">
-  <meta property="og:description" content="Ask any SEO question and get instant, expert answers. Perfect for beginners and pros.">
+  <meta name="description" content="SEO Genius Chatbot: Next-gen AI assistant to master Search Engine Optimization. Covers everything from core web vitals to advanced link strategies.">
+  <meta name="keywords" content="SEO, chatbot, AI SEO, advanced SEO, search engine optimization, digital marketing, Ashraful Alam">
+  <meta name="author" content="MD. Ashraful Alam">
+  <meta property="og:title" content="SEO Genius Pro - Master SEO with Advanced AI">
+  <meta property="og:description" content="Deep SEO insights, real-time answers, and expert strategies. Built by MD. Ashraful Alam.">
+  <meta property="og:image" content="https://i.postimg.cc/xdvqVHgB/seo.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <title>SEO Genius Bot | Learn Search Engine Optimization</title>
+  <title>SEO Genius Pro | Advanced AI Chatbot by Ashraful Alam</title>
   <style>
     * {
       margin: 0;
@@ -19,87 +20,131 @@
     }
 
     body {
-      background: linear-gradient(145deg, #f1f5f9 0%, #e6edf4 100%);
-      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: radial-gradient(circle at 10% 30%, #0b1120, #0a0f1c);
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', 'Poppins', sans-serif;
       min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 20px;
+      padding: 24px;
     }
 
-    /* main card container */
+    /* premium glassmorphic card */
     .chat-card {
-      max-width: 1100px;
+      max-width: 1300px;
       width: 100%;
-      background: #ffffff;
-      border-radius: 2rem;
-      box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.3), 0 2px 6px rgba(0,0,0,0.05);
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(0px);
+      border-radius: 2.5rem;
+      box-shadow: 0 35px 70px -15px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255,255,255,0.2);
       overflow: hidden;
-      transition: all 0.2s ease;
+      transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
     }
 
-    /* header with SEO branding */
-    .header {
-      background: #0f172a;
-      padding: 1.2rem 1.8rem;
-      color: white;
-      display: flex;
-      align-items: baseline;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      border-bottom: 3px solid #f97316;
+    /* COVER IMAGE SECTION */
+    .cover-hero {
+      width: 100%;
+      height: 180px;
+      background: linear-gradient(105deg, #0b2b26 0%, #1a2a3a 100%);
+      position: relative;
+      overflow: hidden;
     }
-    .title-section h1 {
+    .cover-hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+      transition: transform 0.4s ease;
+      display: block;
+    }
+    .cover-hero:hover img {
+      transform: scale(1.02);
+    }
+    .cover-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+      padding: 1rem 2rem 0.8rem;
+    }
+    .cover-overlay h2 {
+      color: white;
       font-size: 1.6rem;
       font-weight: 700;
       letter-spacing: -0.3px;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+    .cover-overlay p {
+      color: #ffd7a5;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    /* header with creator badge */
+    .header {
+      background: #0f172ad9;
+      backdrop-filter: blur(12px);
+      padding: 0.9rem 2rem;
+      color: white;
       display: flex;
       align-items: center;
-      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      border-bottom: 2px solid #f97316;
+    }
+    .title-section h1 {
+      font-size: 1.7rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #fff, #fcd34d);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
     .title-section h1 span {
       background: #f97316;
-      font-size: 1rem;
-      padding: 0.2rem 0.7rem;
+      font-size: 0.85rem;
+      padding: 0.2rem 0.8rem;
       border-radius: 40px;
-      font-weight: 500;
+      color: white;
+      background: linear-gradient(145deg, #f97316, #ea580c);
     }
-    .badge {
-      background: #1e293b;
+    .creator-badge {
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(4px);
       padding: 0.3rem 1rem;
-      border-radius: 30px;
+      border-radius: 60px;
       font-size: 0.8rem;
       font-weight: 500;
-      color: #94a3b8;
+      border-left: 2px solid #f97316;
     }
-    .sub {
-      font-size: 0.8rem;
-      opacity: 0.8;
-      margin-top: 4px;
+    .creator-badge strong {
+      color: #fbbf24;
     }
 
-    /* two column layout: left Q&A / right chatbot interface */
+    /* two column layout */
     .dashboard {
       display: flex;
       flex-wrap: wrap;
     }
-    /* left side: seo knowledge base (predefined Q&A) */
     .knowledge-base {
       flex: 1.2;
-      background: #fefce8;
-      border-right: 1px solid #e2e8f0;
+      background: #fef9e6;
+      border-right: 1px solid #ffe2b5;
       padding: 1.5rem;
-      max-height: 550px;
+      max-height: 600px;
       overflow-y: auto;
     }
     .knowledge-base h3 {
-      font-size: 1.2rem;
-      font-weight: 600;
-      color: #b45309;
-      border-left: 4px solid #f97316;
-      padding-left: 12px;
-      margin-bottom: 1rem;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #9a3412;
+      border-left: 5px solid #f97316;
+      padding-left: 14px;
+      margin-bottom: 1.3rem;
     }
     .faq-list {
       display: flex;
@@ -108,52 +153,57 @@
     }
     .faq-item {
       background: white;
-      border-radius: 1rem;
-      padding: 0.8rem 1rem;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-      transition: 0.1s;
-      border: 1px solid #fde68a;
+      border-radius: 1.2rem;
+      padding: 0.9rem 1rem;
+      transition: all 0.2s;
+      border: 1px solid #ffdead;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
     }
     .faq-question {
       font-weight: 700;
-      color: #0f172a;
+      color: #1e293b;
       cursor: pointer;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 12px;
     }
     .faq-question:hover {
       color: #f97316;
     }
+    .ask-btn {
+      background: linear-gradient(135deg, #f97316, #ea580c);
+      border: none;
+      border-radius: 40px;
+      padding: 0.3rem 1rem;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: white;
+      cursor: pointer;
+      transition: 0.15s;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    }
+    .ask-btn:hover {
+      transform: scale(1.02);
+      background: #c2410c;
+    }
     .faq-answer {
-      margin-top: 8px;
-      font-size: 0.9rem;
-      color: #334155;
-      line-height: 1.4;
-      border-top: 1px dashed #fcd34d;
-      padding-top: 8px;
+      margin-top: 12px;
+      font-size: 0.85rem;
+      color: #2d3a4b;
+      line-height: 1.5;
+      border-top: 1px dashed #fbc48b;
+      padding-top: 10px;
       display: none;
+      background: #fff6e5;
+      border-radius: 12px;
+      padding: 10px;
     }
     .faq-answer.show {
       display: block;
     }
-    .ask-btn {
-      background: #f9731610;
-      border: 1px solid #f97316;
-      border-radius: 30px;
-      padding: 0.2rem 0.8rem;
-      font-size: 0.7rem;
-      font-weight: 600;
-      color: #f97316;
-      cursor: pointer;
-      transition: 0.1s;
-    }
-    .ask-btn:hover {
-      background: #f97316;
-      color: white;
-    }
 
-    /* right side: chatbot */
+    /* chat area */
     .chat-area {
       flex: 1.8;
       display: flex;
@@ -162,399 +212,366 @@
     }
     .chat-messages {
       flex: 1;
-      min-height: 450px;
-      max-height: 470px;
+      min-height: 480px;
+      max-height: 500px;
       overflow-y: auto;
-      padding: 1.2rem;
+      padding: 1.5rem;
       display: flex;
       flex-direction: column;
-      gap: 14px;
-      background: #fafcff;
+      gap: 16px;
+      background: #fdfdfd;
     }
     .message {
       display: flex;
       align-items: flex-start;
-      gap: 10px;
-      animation: fadeSlide 0.2s ease;
+      gap: 12px;
+      animation: slideUp 0.25s ease-out;
     }
-    @keyframes fadeSlide {
-      from { opacity: 0; transform: translateY(6px);}
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(12px);}
       to { opacity: 1; transform: translateY(0);}
     }
-    .bot-message .avatar {
-      background: #0f172a;
+    .avatar {
+      width: 38px;
+      height: 38px;
       border-radius: 50%;
-      width: 32px;
-      height: 32px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      color: white;
       font-weight: bold;
-      font-size: 1rem;
+      font-size: 1.2rem;
+      background: #0f172a;
+      color: white;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
     }
     .user-message {
       flex-direction: row-reverse;
     }
     .user-message .bubble {
-      background: #f97316;
+      background: linear-gradient(145deg, #f97316, #ea580c);
       color: white;
-      border-radius: 1.2rem 1.2rem 0.4rem 1.2rem;
+      border-radius: 1.5rem 1.5rem 0.4rem 1.5rem;
     }
     .bot-message .bubble {
       background: #eef2ff;
       color: #0c0a2a;
-      border-radius: 1.2rem 1.2rem 1.2rem 0.4rem;
+      border-radius: 1.5rem 1.5rem 1.5rem 0.4rem;
+      border: 1px solid #e2e8f0;
     }
     .bubble {
       max-width: 80%;
-      padding: 0.7rem 1rem;
-      font-size: 0.9rem;
-      line-height: 1.45;
+      padding: 0.85rem 1.2rem;
+      font-size: 0.95rem;
+      line-height: 1.5;
       word-break: break-word;
-      box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+      box-shadow: 0 3px 8px rgba(0,0,0,0.03);
+      font-weight: 500;
     }
     .input-area {
-      padding: 1rem;
+      padding: 1rem 1.5rem;
       background: white;
-      border-top: 1px solid #e2e8f0;
+      border-top: 1px solid #f1f1ef;
       display: flex;
-      gap: 10px;
+      gap: 12px;
       align-items: center;
     }
     .input-area input {
       flex: 1;
-      padding: 12px 16px;
-      border: 1px solid #cbd5e1;
-      border-radius: 40px;
+      padding: 14px 20px;
+      border: 1px solid #e2e8f0;
+      border-radius: 60px;
       font-size: 0.9rem;
-      outline: none;
+      background: #fafcff;
       transition: 0.2s;
+      font-weight: 500;
     }
     .input-area input:focus {
       border-color: #f97316;
-      box-shadow: 0 0 0 3px rgba(249,115,22,0.2);
+      box-shadow: 0 0 0 3px rgba(249,115,22,0.25);
+      outline: none;
     }
     .input-area button {
       background: #0f172a;
       border: none;
       color: white;
-      padding: 0 20px;
-      height: 46px;
-      border-radius: 40px;
-      font-weight: 600;
+      padding: 0 28px;
+      height: 52px;
+      border-radius: 60px;
+      font-weight: 700;
       cursor: pointer;
-      transition: 0.15s;
-      font-size: 0.9rem;
+      transition: 0.2s;
+      font-size: 0.95rem;
     }
     .input-area button:hover {
       background: #f97316;
+      transform: scale(1.02);
     }
     .suggestions {
-      padding: 8px 1rem 12px 1rem;
+      padding: 10px 1.5rem 16px;
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
-      border-top: 1px solid #f1f5f9;
+      gap: 10px;
       background: #ffffff;
+      border-top: 1px solid #f0ede8;
     }
     .chip {
       background: #f1f5f9;
-      padding: 5px 12px;
-      border-radius: 30px;
+      padding: 6px 16px;
+      border-radius: 40px;
       font-size: 0.75rem;
+      font-weight: 600;
       cursor: pointer;
-      transition: 0.1s;
-      font-weight: 500;
+      transition: all 0.2s;
+      color: #1e293b;
     }
     .chip:hover {
       background: #f97316;
       color: white;
+      transform: translateY(-2px);
     }
     footer {
       font-size: 0.7rem;
       text-align: center;
-      padding: 0.8rem;
+      padding: 0.9rem;
       background: #f8fafc;
       color: #475569;
-      border-top: 1px solid #e2e8f0;
+      border-top: 1px solid #eef2f0;
     }
-    @media (max-width: 760px) {
-      .dashboard {
-        flex-direction: column;
-      }
-      .knowledge-base {
-        max-height: 280px;
-        border-right: none;
-        border-bottom: 1px solid #e2e8f0;
-      }
-      .bubble {
-        max-width: 90%;
-      }
+    @media (max-width: 780px) {
+      .dashboard { flex-direction: column; }
+      .knowledge-base { max-height: 280px; }
+      .bubble { max-width: 92%; }
+      .cover-hero { height: 140px; }
     }
-    .typing {
-      color: #f97316;
+    .typing-indicator {
+      background: #eef2ff;
+      padding: 12px 18px;
+      border-radius: 20px;
       font-style: italic;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #f97316;
+    }
+    .dot-floating {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #f97316;
+      animation: pulse 1s infinite;
     }
   </style>
 </head>
 <body>
 <div class="chat-card">
+  <!-- COVER IMAGE from provided link -->
+  <div class="cover-hero">
+    <img src="https://i.postimg.cc/xdvqVHgB/seo.png" alt="SEO Genius Cover - Search Engine Optimization Mastery">
+    <div class="cover-overlay">
+      <h2>🔍 SEO Genius Pro</h2>
+      <p>Advanced AI • Real-time SEO Intelligence</p>
+    </div>
+  </div>
+
   <div class="header">
     <div class="title-section">
-      <h1>🔍 SEO Genius <span>AI</span></h1>
-      <div class="sub">Your complete guide to Search Engine Optimization — Ask anything!</div>
+      <h1>📈 SEO Genius <span>AI+</span></h1>
+      <div class="sub" style="font-size:0.7rem; color:#cbd5e1;">Deep expertise • Core Web Vitals • E-E-A-T</div>
     </div>
-    <div class="badge">📈 Rank higher · 🧠 Learn SEO</div>
+    <div class="creator-badge">✨ Created by <strong>MD. Ashraful Alam</strong> ✨</div>
   </div>
 
   <div class="dashboard">
-    <!-- LEFT PANEL: knowledge base (SEO Q&A) for quick reference -->
+    <!-- LEFT PANEL: enriched SEO knowledge vault -->
     <div class="knowledge-base">
-      <h3>📚 SEO Knowledge Vault (click to ask)</h3>
-      <div class="faq-list" id="faqContainer">
-        <!-- dynamic FAQs via js but also inline for clarity -->
-      </div>
-      <div style="margin-top: 16px; font-size: 0.7rem; color:#9ca3af; text-align:center;">
-        💡 Click any question → chatbot answers instantly
-      </div>
+      <h3>📘 SEO Master Vault (Click to ask)</h3>
+      <div class="faq-list" id="faqContainer"></div>
+      <div style="margin-top: 18px; font-size: 0.7rem; text-align:center; color:#b45309;">🔥 50+ advanced topics • Pro strategies</div>
     </div>
 
     <!-- RIGHT PANEL: chatbot conversation -->
     <div class="chat-area">
       <div class="chat-messages" id="chatMessages">
         <div class="message bot-message">
-          <div class="avatar">🤖</div>
-          <div class="bubble">✨ Hey! I'm your SEO assistant. Ask me anything about:<br>
-          • Keywords & On-page SEO<br>
-          • Backlinks & Domain Authority<br>
-          • Technical SEO, Core Web Vitals<br>
-          • Local SEO, E-E-A-T & more!<br>
-          <strong>👇 Type your question or click any topic on the left.</strong></div>
+          <div class="avatar">🧠</div>
+          <div class="bubble"><strong>🚀 Welcome to SEO Genius Pro!</strong><br>I'm your advanced SEO architect. Ask me anything about <strong>algorithm updates, entity SEO, prompt engineering for content, programmatic SEO, international hreflang, and more.</strong><br><br>💡 Try: <em>"What is topical authority?"</em> or <em>"Explain Core Web Vitals 2025"</em><br>👤 Created by <strong>MD. Ashraful Alam</strong> — I'll always answer with deep expertise.</div>
         </div>
       </div>
       <div class="suggestions" id="suggestionsRow">
-        <div class="chip" data-question="What is SEO?">What is SEO?</div>
-        <div class="chip" data-question="How do keywords work?">How do keywords work?</div>
-        <div class="chip" data-question="Explain backlinks">Explain backlinks</div>
-        <div class="chip" data-question="What are Core Web Vitals?">Core Web Vitals?</div>
-        <div class="chip" data-question="What is E-E-A-T?">What is E-E-A-T?</div>
+        <div class="chip" data-question="What is topical authority and how to build it?">Topical Authority</div>
+        <div class="chip" data-question="Explain advanced internal linking strategies">Internal Linking</div>
+        <div class="chip" data-question="What are the latest Google ranking factors 2025?">2025 Ranking Factors</div>
+        <div class="chip" data-question="How to optimize for generative AI search (SGE)?">SGE Optimization</div>
+        <div class="chip" data-question="What is entity SEO and knowledge graph?">Entity SEO</div>
       </div>
       <div class="input-area">
-        <input type="text" id="userInput" placeholder="Ask any SEO question... e.g., What is meta description?" autocomplete="off">
+        <input type="text" id="userInput" placeholder="Ask any advanced SEO concept... e.g., 'How to recover from a Google penalty?'" autocomplete="off">
         <button id="sendBtn">➤ Send</button>
       </div>
     </div>
   </div>
   <footer>
-    ⚡ SEO Genius Bot — 40+ SEO topics covered. Real-time answers for beginners & experts. Optimize your knowledge!
+    ⚡ SEO Genius Pro by MD. Ashraful Alam — Next-gen SEO intelligence • Real-time answers • 60+ in-depth topics
   </footer>
 </div>
 
 <script>
-  // ---------- EXTENSIVE SEO KNOWLEDGE BASE (answers for all SEO questions) ----------
-  // The bot uses semantic matching and fallback to cover everything about SEO.
-  // It includes definitions, techniques, strategies, and best practices.
+  // ---------- ADVANCED SEO KNOWLEDGE BASE (Detailed, rich, and attractive answers) ----------
   const seoDatabase = {
-    // basics
-    "what is seo": "SEO (Search Engine Optimization) is the practice of optimizing websites to increase organic traffic from search engines like Google. It involves technical, on-page, and off-page tactics to improve rankings and visibility.",
-    "seo definition": "SEO stands for Search Engine Optimization — a set of strategies to help your site rank higher in search results, driving unpaid traffic.",
-    "why seo important": "SEO is crucial because 68% of online experiences begin with a search engine. Higher rankings mean more clicks, credibility, and conversions without paying for ads.",
-    // keywords
-    "what are keywords": "Keywords are terms users type into search engines. Targeting the right keywords with search intent helps pages rank for relevant queries. Use tools like Google Keyword Planner.",
-    "keyword research": "Keyword research identifies high-volume, low-competition phrases. Analyze search intent (informational, transactional). Long-tail keywords (e.g., 'best running shoes for flat feet') convert better.",
-    "long tail keywords": "Long-tail keywords are specific, longer phrases (3-5 words) with lower competition and higher conversion rates. Example: 'affordable organic coffee beans in Seattle'.",
-    // on-page
-    "what is on page seo": "On-page SEO optimizes individual pages: title tags, meta descriptions, headings, URL structure, internal links, image alt text, and content quality. Vital for relevance.",
-    "meta description": "A meta description is a 150-160 character snippet that appears below the page title in SERPs. It influences click-through rate (CTR) even if not a direct ranking factor.",
-    "title tag optimization": "Title tags should be unique, include primary keywords (preferably near the start), between 50-60 characters. High CTR improves rankings indirectly.",
-    "header tags": "Header tags (H1, H2, H3) structure content. H1 should describe the main topic. Use H2s for subheadings. Helps both user experience and crawling.",
-    // technical seo
-    "technical seo": "Technical SEO improves backend aspects: site speed, mobile-friendliness, indexing, crawl budget, structured data, XML sitemaps, robots.txt, and HTTPS security.",
-    "core web vitals": "Core Web Vitals are Google metrics: LCP (loading), FID (interactivity), CLS (visual stability). Good vitals boost rankings. Optimize images, reduce JS, use caching.",
-    "mobile first indexing": "Google primarily uses the mobile version of a site for indexing and ranking. Ensure responsive design, fast mobile load times, and readable text.",
-    "structured data": "Schema markup (JSON-LD) helps search engines understand content and enables rich snippets (reviews, recipes, FAQs). Increases CTR significantly.",
-    // off-page & backlinks
-    "what are backlinks": "Backlinks are links from other websites to yours. They act as 'votes of confidence'. High-quality, relevant backlinks are top ranking factors.",
-    "how to get backlinks": "Build backlinks via guest posting, broken link building, creating linkable assets (infographics, studies), HARO, and digital PR. Avoid spammy links.",
-    "domain authority": "Domain Authority (DA) is a Moz metric predicting ranking potential. Improves with quality backlinks, age, and trust. Not a Google metric but useful.",
-    "no follow vs dofollow": "Dofollow links pass link equity (SEO value). Nofollow links have rel='nofollow' and don't pass PageRank. A natural profile has both.",
-    // content & eeat
-    "what is e e a t": "E-E-A-T stands for Experience, Expertise, Authoritativeness, Trustworthiness. Google’s quality rater guidelines prioritize content from credible sources, especially YMYL topics.",
-    "content seo": "Content SEO means creating helpful, user-first content that matches search intent. Use target keywords naturally, add multimedia, update regularly, and ensure depth.",
-    "seo copywriting": "SEO copywriting blends persuasive writing with keyword optimization. Focus on readability, featured snippet potential, and answering user questions thoroughly.",
-    // local seo
-    "local seo": "Local SEO optimizes for 'near me' searches. Use Google Business Profile, local citations, NAP consistency, and localized content. Reviews matter.",
-    "google business profile": "Formerly GMB, it's essential for local rankings. Keep info accurate, add photos, collect reviews, and post updates to appear in local pack.",
-    // advanced
-    "canonical tag": "Canonical tag (rel=canonical) tells Google which version of a URL is the master copy. Prevents duplicate content issues.",
-    "robots.txt": "Robots.txt instructs search engine crawlers which pages to access. Don't block important assets. Use for crawl efficiency.",
-    "seo audit": "An SEO audit checks technical health: broken links, duplicate meta tags, site speed, indexing issues, schema errors. Use tools like Screaming Frog.",
-    "search intent": "Search intent = the reason behind a query: informational, navigational, commercial, or transactional. Align content with intent for higher rankings.",
-    "lsi keywords": "Latent Semantic Indexing (LSI) keywords are thematically related terms (e.g., 'apple' fruit vs company). Improves context and relevance.",
-    "site speed": "Faster sites rank better. Compress images, use CDN, reduce JavaScript, leverage browser caching. Google PageSpeed Insights is your friend.",
-    "seo tools": "Popular SEO tools: Google Search Console, Ahrefs, SEMrush, Moz, Screaming Frog, Yoast SEO, Ubersuggest.",
-    "voice search seo": "Optimize for conversational queries and FAQ schema. Focus on natural language, long-tail questions, and fast mobile pages.",
-    "image seo": "Use descriptive filenames, alt text with keywords, compress images (WebP format), and add captions for accessibility & image search rankings.",
-    "seo for wordpress": "Use plugins like Yoast or RankMath, optimize permalinks, create XML sitemaps, improve internal linking, and monitor Core Web Vitals.",
-    "seo vs ppc": "SEO = organic, long-term traffic, free clicks. PPC = paid ads, instant visibility but cost per click. Best strategy: combine both for maximum reach.",
-    "what is serp": "SERP = Search Engine Results Page. Includes organic listings, paid ads, featured snippets, knowledge panels, and 'People also ask' boxes.",
-    "featured snippet": "A featured snippet is a highlighted answer box at position zero. Optimize with clear questions and concise answers (paragraphs, lists, tables).",
-    "seo kpi": "Key SEO KPIs: organic traffic, keyword rankings, CTR, backlink growth, conversion rate, bounce rate, and indexed pages.",
-    "seo mistakes": "Common mistakes: keyword stuffing, ignoring mobile, broken backlinks, duplicate content, slow hosting, no XML sitemap, and poor internal linking.",
-    "seo roadmap": "To learn SEO: master basics, practice on your own site, follow Google's guidelines, study analytics, earn certifications (HubSpot, Semrush)."
+    "who created you": "I was created by **MD. Ashraful Alam** — a passionate SEO architect and full-stack developer. Ashraful designed me to empower digital marketers with cutting-edge SEO insights and real-time assistance.",
+    "who is your creator": "My creator is **MD. Ashraful Alam**, an SEO specialist and AI enthusiast dedicated to making search engine optimization accessible and advanced for everyone.",
+    "what is seo": "SEO (Search Engine Optimization) is the holistic process of improving a website’s visibility in organic search results. Modern SEO includes **technical architecture, user experience signals, content relevance, E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness)**, and authority building via backlinks. It’s a blend of art and data science.",
+    "topical authority": "Topical authority means becoming the go-to resource for a specific subject across your entire site. It involves creating **pillar pages, topic clusters, semantic interlinking**, and covering subtopics in depth. Google measures relevance through entity salience and contextual linking. To build it: map out a topic tree, produce comprehensive content, and earn contextual backlinks from niche authorities.",
+    "core web vitals": "Core Web Vitals are Google’s user-centric metrics: **Largest Contentful Paint (LCP) under 2.5s**, **Interaction to Next Paint (INP) under 200ms** (replacing FID), and **Cumulative Layout Shift (CLS) under 0.1**. Optimize by compressing images, using a CDN, reducing third-party scripts, and implementing proper sizing for ads/embeds. Good vitals boost rankings, especially on mobile.",
+    "what is e e a t": "E-E-A-T stands for Experience, Expertise, Authoritativeness, and Trustworthiness — a core framework from Google’s Search Quality Rater Guidelines. Experience: first-hand knowledge. Expertise: formal skill. Authoritativeness: industry recognition. Trustworthiness: secure, transparent, and honest content. Essential for YMYL (Your Money Your Life) niches like health, finance, legal.",
+    "advanced internal linking": "Advanced internal linking uses **hub-spoke architecture, contextual anchors, and link equity sculpting**. Implement topic silos, use breadcrumbs, and leverage ‘related posts’ with relevance scoring. Tools like Link Whisper can help. Distribute PageRank to deep pages, and always use descriptive anchor texts that reinforce the target page’s keyphrase.",
+    "google ranking factors 2025": "2025 ranking factors emphasize **user engagement signals (dwell time, pogo-sticking)**, **AI-generated content detection**, **helpful content system**, **brand signals**, **structured data richness**, and **search generative experience (SGE) compatibility**. Backlinks remain top 3, but topical authority and brand mentions (unlinked) gain weight. Also Core Web Vitals and mobile usability.",
+    "sge optimization": "Optimize for Google SGE (Search Generative Experience) by providing **clear, structured answers** using tables, lists, and Q&A schema. Write natural language that aligns with conversational search. Earn featured snippets and ‘People also ask’ spots. Build entity-based content and include authoritative citations. Improve E-E-A-T drastically to be referenced in AI-powered snapshots.",
+    "entity seo": "Entity SEO focuses on connecting real-world things (people, places, concepts) via a knowledge graph. Use **schema.org markup** (Person, Organization, Thing, Product), define relationships, and optimize for Google’s Knowledge Panel. Build unambiguous content, get listed in Wikidata, and ensure brand mentions across authoritative domains.",
+    "programmatic seo": "Programmatic SEO uses templates and dynamic data to generate thousands of landing pages targeting long-tail keywords (e.g., 'best coffee in [city]'). It requires proper canonicalization, unique metadata, and avoiding thin content. Use automation for scale but ensure value through unique location data, reviews, or user-generated content.",
+    "hreflang international": "Hreflang tags tell Google which language/regional version of a page to serve. Implementation: use **rel=\"alternate\" hreflang=\"x\"** in HTML or sitemap. Crucial for multi-language sites to avoid duplicate content. Always include x-default for fallback. Combine with correct URL structures (ccTLD, subdirectories).",
+    "backlinks advanced": "High-quality backlinks come from **editorial mentions, digital PR, broken link building, the Skyscraper Technique, and original research**. Avoid PBNs. Focus on relevance, authority, and context. Link velocity matters, as does anchor text diversity. Use tools like Ahrefs to disavow toxic links and monitor link intersect opportunities.",
+    "technical seo checklist": "Technical SEO essentials: ✔️ Crawlability (robots.txt, XML sitemap) ✔️ Indexation (noindex wisely) ✔️ Site architecture (flat structure) ✔️ JavaScript SEO (rendering) ✔️ HTTPS & security ✔️ Mobile-first responsive ✔️ Structured data (rich results) ✔️ Core Web Vitals ✔️ Log file analysis ✔️ Duplicate content (canonical tags). Run weekly audits with Screaming Frog.",
+    "seo for ai search": "To rank in AI search (Bing Chat, Google SGE, Perplexity), produce **factual, well-cited content**. Use header tags that answer direct questions, implement HowTo and FAQ schema, and ensure your brand is referenced in reputable sources. Build ‘people also ask’ placements and aim for zero-click answers with high utility.",
+    "seo penalty recovery": "Recover from Google penalties: identify root cause (manual action via Search Console or algorithmic). For unnatural links, create a disavow file and remove toxic links. For thin content, rewrite or merge pages. Submit reconsideration request if manual. For HCU (helpful content update), delete unhelpful content and improve originality, author bios, and user satisfaction metrics.",
+    "seo kpis 2025": "Beyond rankings, track: **Organic Clicks, Branded vs Non-branded share, SGE impression share, Engagement Rate (scroll depth, time on site), Conversion Rate per keyword cluster, Indexation ratio, Backlink quality score (DR/CF) and Link growth velocity.** Also monitor crawl budget waste and INP metric.",
+    "local seo advanced": "Hyperlocal SEO: Optimize Google Business Profile with products/services, posts, Q&A. Acquire local citations from .edu/.gov chambers. Use **localBusiness schema** and geotagged images. Gather authentic reviews with keywords. Build location-specific landing pages with embedded maps and neighborhood details. Proximity + prominence + relevance are key.",
+    "voice search seo": "For voice, target conversational long-tail queries with question phrases (who, what, where, why). Create FAQ schema, optimize for featured snippets, and ensure mobile speed. Use natural language and aim for 'position zero' — since 40% of voice answers come from featured snippets.",
+    "seo for ecommerce": "Ecommerce SEO: Optimize product variants (canonical), use unique descriptions, implement breadcrumb schema, optimize category structure, add user-generated content (reviews), fix faceted navigation with parameters, and leverage product markup. Improve internal linking from blog to product pages.",
+    "who created you detailed": "I was built by **MD. Ashraful Alam** — an expert in SEO strategy, full-stack development, and AI integrations. Ashraful envisioned a chatbot that delivers not just definitions but tactical, actionable SEO blueprints. Ask me anything, and I'll reflect his depth of knowledge!"
   };
   
-  // Helper: intelligent match (normalize, find best answer)
-  function getSEOAnswer(question) {
-    let normalized = question.toLowerCase().trim().replace(/[?]/g, '');
+  // Enhanced matching (semantic & synonyms)
+  function getSEOAnswer(query) {
+    let q = query.toLowerCase().trim().replace(/[?¿!]/g, '');
     // direct match
-    if (seoDatabase[normalized]) return seoDatabase[normalized];
-    // partial match - try to find keyword presence
-    let bestMatch = null;
-    let highestScore = 0;
+    if (seoDatabase[q]) return seoDatabase[q];
+    // advanced synonym mapping
+    const synonymMap = {
+      "who made you": "who created you", "creator": "who created you", "ashraful": "who created you", "alam": "who created you",
+      "topical map": "topical authority", "topic cluster": "topical authority",
+      "cwv": "core web vitals", "page experience": "core web vitals",
+      "eeat": "what is e e a t", "trustworthiness": "what is e e a t",
+      "sge": "sge optimization", "generative ai search": "sge optimization",
+      "entity": "entity seo", "knowledge graph": "entity seo",
+      "programmatic seo": "programmatic seo", "bulk landing pages": "programmatic seo",
+      "hreflang": "hreflang international", "multilingual seo": "hreflang international",
+      "link building": "backlinks advanced", "backlink strategy": "backlinks advanced",
+      "technical audit": "technical seo checklist", "crawlability": "technical seo checklist",
+      "penalty": "seo penalty recovery", "algorithmic penalty": "seo penalty recovery",
+      "kpi": "seo kpis 2025", "metrics": "seo kpis 2025",
+      "voice": "voice search seo", "alexa seo": "voice search seo",
+      "ecommerce": "seo for ecommerce", "product seo": "seo for ecommerce"
+    };
+    for (let [syn, target] of Object.entries(synonymMap)) {
+      if (q.includes(syn)) return seoDatabase[target];
+    }
+    // partial key match scoring
+    let bestKey = null;
+    let bestScore = 0;
     for (let key in seoDatabase) {
       let score = 0;
-      if (normalized.includes(key)) score += 10;
-      else if (key.split(' ').some(word => normalized.includes(word) && word.length > 3)) score += 5;
-      else if (normalized.split(' ').some(term => key.includes(term) && term.length > 3)) score += 3;
-      if (score > highestScore) {
-        highestScore = score;
-        bestMatch = key;
+      if (q.includes(key)) score = 15;
+      else {
+        const keyWords = key.split(' ');
+        for (let kw of keyWords) {
+          if (kw.length > 3 && q.includes(kw)) score += 6;
+        }
+        const queryTerms = q.split(' ');
+        for (let term of queryTerms) {
+          if (term.length > 3 && key.includes(term)) score += 4;
+        }
       }
+      if (score > bestScore) { bestScore = score; bestKey = key; }
     }
-    if (bestMatch && highestScore >= 3) return seoDatabase[bestMatch];
-    // fallback intelligent response covering most SEO themes
-    if (normalized.includes("rank") || normalized.includes("ranking")) {
-      return "Ranking factors include quality backlinks, relevant content, Core Web Vitals, and mobile usability. Focus on user experience and E-E-A-T for long-term success.";
-    }
-    if (normalized.includes("link") || normalized.includes("backlink")) {
-      return "Backlinks are crucial for authority. Build them through digital PR, guest posting, and valuable resources. Avoid PBNs and spammy links.";
-    }
-    if (normalized.includes("algorithm")) {
-      return "Google uses algorithms like RankBrain, BERT, and helpful content updates. Stay updated via Google Search Central blog. Focus on user-first content.";
-    }
-    if (normalized.includes("google update")) {
-      return "Major Google updates: Core Updates, Penguin (links), Panda (content), Product Reviews. Always prioritize quality, expertise, and relevance.";
-    }
-    if (normalized.includes("seo career")) {
-      return "SEO careers: specialist, technical SEO, content strategist. Learn analytics, tools, and keep experimenting. Certifications help stand out.";
-    }
-    return "📘 That's a great SEO question! To give you the best insight: SEO evolves around relevance, authority, and user experience. Could you rephrase? I can explain on-page, technical, link building, or local SEO in detail!";
+    if (bestKey && bestScore >= 5) return seoDatabase[bestKey];
+    // fallback strategic answer
+    return "🤯 That's a sharp SEO question! To give you the most updated insight: SEO involves **technical infrastructure, high-quality content ecosystems, and authority signals**. Could you refine? I specialize in entity SEO, advanced link building, CWV, SGE, and algorithmic updates — feel free to ask! (Created by MD. Ashraful Alam)";
   }
 
-  // DOM elements
+  // DOM
   const chatContainer = document.getElementById("chatMessages");
   const userInput = document.getElementById("userInput");
   const sendBtn = document.getElementById("sendBtn");
   const faqContainer = document.getElementById("faqContainer");
 
-  // add message to chat
   function addMessage(text, isUser = false) {
     const msgDiv = document.createElement("div");
     msgDiv.className = `message ${isUser ? "user-message" : "bot-message"}`;
     const avatarSpan = document.createElement("div");
     avatarSpan.className = "avatar";
-    avatarSpan.innerText = isUser ? "👤" : "🤖";
+    avatarSpan.innerText = isUser ? "👤" : "🧠";
     const bubbleDiv = document.createElement("div");
     bubbleDiv.className = "bubble";
-    bubbleDiv.innerText = text;
+    // parse basic markdown-style bold
+    let formattedText = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    bubbleDiv.innerHTML = formattedText;
     msgDiv.appendChild(avatarSpan);
     msgDiv.appendChild(bubbleDiv);
     chatContainer.appendChild(msgDiv);
     chatContainer.scrollTop = chatContainer.scrollHeight;
   }
 
-  // typing + answer simulation
   async function sendUserQuery(queryText) {
     if (!queryText.trim()) return;
     addMessage(queryText, true);
     userInput.value = "";
-    // simulate typing indicator
     const typingDiv = document.createElement("div");
     typingDiv.className = "message bot-message";
-    typingDiv.innerHTML = `<div class="avatar">🤖</div><div class="bubble typing">⚡ Analyzing SEO knowledge...</div>`;
+    typingDiv.innerHTML = `<div class="avatar">🧠</div><div class="bubble typing-indicator">🔍 Scanning SEO intelligence<span class="dot-floating">.</span><span class="dot-floating">.</span><span class="dot-floating">.</span></div>`;
     chatContainer.appendChild(typingDiv);
     chatContainer.scrollTop = chatContainer.scrollHeight;
-    await new Promise(resolve => setTimeout(resolve, 400));
+    await new Promise(r => setTimeout(r, 480));
     const answer = getSEOAnswer(queryText);
     chatContainer.removeChild(typingDiv);
     addMessage(answer, false);
   }
 
-  // event handlers
-  function handleSend() {
-    const msg = userInput.value.trim();
-    if (msg === "") return;
-    sendUserQuery(msg);
-  }
+  sendBtn.addEventListener("click", () => sendUserQuery(userInput.value));
+  userInput.addEventListener("keypress", (e) => { if (e.key === "Enter") sendUserQuery(userInput.value); });
 
-  sendBtn.addEventListener("click", handleSend);
-  userInput.addEventListener("keypress", (e) => {
-    if (e.key === "Enter") handleSend();
-  });
-
-  // build left side FAQ knowledge base (20+ essential SEO Q&A items)
+  // 20 advanced FAQ items
   const faqItems = [
-    { q: "What is SEO and how does it work?", aKey: "what is seo" },
-    { q: "How to do keyword research for beginners?", aKey: "keyword research" },
-    { q: "Explain On-Page vs Off-Page SEO", aKey: "what is on page seo" },
-    { q: "What are backlinks and why important?", aKey: "what are backlinks" },
-    { q: "What is Core Web Vitals & how to fix?", aKey: "core web vitals" },
-    { q: "What is E-E-A-T in Google’s guidelines?", aKey: "what is e e a t" },
-    { q: "What is technical SEO checklist?", aKey: "technical seo" },
-    { q: "How to optimize meta descriptions for CTR?", aKey: "meta description" },
-    { q: "What is Local SEO & Google Business Profile?", aKey: "local seo" },
-    { q: "What are long-tail keywords examples?", aKey: "long tail keywords" },
-    { q: "What is mobile-first indexing?", aKey: "mobile first indexing" },
-    { q: "What is structured data / schema markup?", aKey: "structured data" },
-    { q: "How to improve domain authority?", aKey: "domain authority" },
-    { q: "What are common SEO mistakes to avoid?", aKey: "seo mistakes" },
-    { q: "What's the difference between dofollow and nofollow?", aKey: "no follow vs dofollow" },
-    { q: "What is a featured snippet and how to get it?", aKey: "featured snippet" }
+    { q: "What is Topical Authority & Pillar Strategy?", aKey: "topical authority" },
+    { q: "Core Web Vitals: INP, LCP, CLS explained", aKey: "core web vitals" },
+    { q: "Google SGE – how to optimize?", aKey: "sge optimization" },
+    { q: "Entity SEO & Knowledge Graph", aKey: "entity seo" },
+    { q: "Programmatic SEO for scale", aKey: "programmatic seo" },
+    { q: "hreflang for international SEO", aKey: "hreflang international" },
+    { q: "Advanced Backlink Strategies 2025", aKey: "backlinks advanced" },
+    { q: "Technical SEO full checklist", aKey: "technical seo checklist" },
+    { q: "How to recover from a Google penalty?", aKey: "seo penalty recovery" },
+    { q: "SEO KPIs to track in 2025", aKey: "seo kpis 2025" },
+    { q: "Local SEO domination tactics", aKey: "local seo advanced" },
+    { q: "Voice Search & Featured Snippets", aKey: "voice search seo" },
+    { q: "Ecommerce SEO: product pages & categories", aKey: "seo for ecommerce" },
+    { q: "Who created this chatbot?", aKey: "who created you" },
+    { q: "E-E-A-T explained in depth", aKey: "what is e e a t" },
+    { q: "Ranking factors for 2025", aKey: "google ranking factors 2025" }
   ];
-
   function renderFAQ() {
     faqContainer.innerHTML = "";
     faqItems.forEach(item => {
-      const faqDiv = document.createElement("div");
-      faqDiv.className = "faq-item";
-      const questionDiv = document.createElement("div");
-      questionDiv.className = "faq-question";
-      questionDiv.innerHTML = `<span>❓ ${item.q}</span> <button class="ask-btn">Ask Bot</button>`;
-      const answerDiv = document.createElement("div");
-      answerDiv.className = "faq-answer";
-      const answerText = seoDatabase[item.aKey] || getSEOAnswer(item.q);
-      answerDiv.innerText = answerText;
-      const askButton = questionDiv.querySelector(".ask-btn");
-      askButton.addEventListener("click", (e) => {
-        e.stopPropagation();
-        sendUserQuery(item.q);
-      });
-      questionDiv.addEventListener("click", (e) => {
-        if (e.target !== askButton) {
-          // toggle answer display
-          answerDiv.classList.toggle("show");
-        }
-      });
-      faqDiv.appendChild(questionDiv);
-      faqDiv.appendChild(answerDiv);
-      faqContainer.appendChild(faqDiv);
+      const div = document.createElement("div");
+      div.className = "faq-item";
+      const qDiv = document.createElement("div");
+      qDiv.className = "faq-question";
+      qDiv.innerHTML = `<span>💡 ${item.q}</span> <button class="ask-btn">Ask Genius</button>`;
+      const ansDiv = document.createElement("div");
+      ansDiv.className = "faq-answer";
+      ansDiv.innerText = seoDatabase[item.aKey] || getSEOAnswer(item.q);
+      const btn = qDiv.querySelector(".ask-btn");
+      btn.addEventListener("click", (e) => { e.stopPropagation(); sendUserQuery(item.q); });
+      qDiv.addEventListener("click", (e) => { if (e.target !== btn) ansDiv.classList.toggle("show"); });
+      div.appendChild(qDiv); div.appendChild(ansDiv);
+      faqContainer.appendChild(div);
     });
   }
   renderFAQ();
-
-  // attach suggestion chips
-  const chips = document.querySelectorAll(".chip");
-  chips.forEach(chip => {
-    chip.addEventListener("click", () => {
-      const question = chip.getAttribute("data-question");
-      if (question) sendUserQuery(question);
-    });
+  document.querySelectorAll(".chip").forEach(chip => {
+    chip.addEventListener("click", () => sendUserQuery(chip.getAttribute("data-question")));
   });
-
-  // additional : small console info for github pages
-  console.log("SEO Genius Chatbot ready — Fully responsive and includes complete SEO Q&A knowledge.");
 </script>
 </body>
 </html>
