@@ -1,28 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-<head:
+<html lang="bn">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
-  <meta name="description" content="SEO Genius Pro - Advanced AI Chatbot for Search Engine Optimization with smart suggestions, context-aware responses, and personalized learning.">
-  <meta name="keywords" content="SEO, chatbot, AI, search engine optimization, digital marketing, Ashraful Alam, advanced SEO, smart suggestions">
+  <meta name="description" content="SEO জিনিয়াস - বিস্তারিত এসইও এ টু জেড শিখুন। প্রশ্ন ও সার্ভিস নিন। MD. Ashraful Alam দ্বারা নির্মিত।">
   <meta name="author" content="MD. Ashraful Alam">
-  <meta property="og:title" content="SEO Genius Pro - Smart SEO Assistant with AI">
-  <meta property="og:description" content="Personalized SEO learning with smart suggestions, difficulty levels, and context-aware answers. Built by MD. Ashraful Alam.">
+  <meta property="og:title" content="SEO জিনিয়াস - ডিটেইলড এসইও লার্নিং ও সার্ভিস চ্যাটবট">
   <meta property="og:image" content="https://i.postimg.cc/xdvqVHgB/seo.png">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <title>SEO Genius Pro | Smart Suggestions & AI Assistant by Ashraful Alam</title>
+  <title>SEO জিনিয়াস | ডিটেইলড এসইও লার্নিং ও সার্ভিস</title>
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      -webkit-tap-highlight-color: transparent;
     }
 
     body {
-      background: radial-gradient(circle at 10% 30%, #0b1120, #0a0f1c);
-      font-family: system-ui, -apple-system, 'Segoe UI', 'Inter', 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans Bengali', Roboto, Helvetica, Arial, sans-serif;
       min-height: 100vh;
       display: flex;
       justify-content: center;
@@ -30,571 +25,685 @@
       padding: 12px;
     }
 
-    .chat-card {
-      max-width: 1300px;
+    .chat-container {
       width: 100%;
-      background: rgba(255, 255, 255, 0.98);
-      border-radius: 1.75rem;
-      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255,255,255,0.15);
+      max-width: 650px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 28px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3), 0 0 0 1px rgba(255,255,255,0.1);
       overflow: hidden;
     }
 
-    /* Cover Image */
-    .cover-hero {
+    .cover {
       width: 100%;
-      height: auto;
-      min-height: 130px;
-      max-height: 180px;
-      background: linear-gradient(105deg, #0b2b26 0%, #1a2a3a 100%);
+      height: 110px;
+      background: linear-gradient(135deg, #0b2b26, #1a2a3a);
       position: relative;
       overflow: hidden;
     }
-    .cover-hero img {
+    .cover img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center 30%;
-      display: block;
+      object-position: center;
     }
-    .cover-overlay {
+    .cover-text {
       position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);
-      padding: 0.8rem 1rem 0.6rem;
+      bottom: 8px;
+      left: 12px;
+      right: 12px;
+      background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+      padding: 8px 0 4px;
     }
-    .cover-overlay h2 {
+    .cover-text h2 {
       color: white;
-      font-size: 1.3rem;
+      font-size: 1rem;
       font-weight: 700;
     }
-    .cover-overlay p {
+    .cover-text p {
       color: #ffd7a5;
-      font-size: 0.7rem;
+      font-size: 0.6rem;
     }
 
-    /* Header */
     .header {
-      background: #0f172ad9;
-      backdrop-filter: blur(12px);
-      padding: 0.8rem 1rem;
-      color: white;
+      background: #0f172a;
+      padding: 10px 14px;
       display: flex;
       align-items: center;
-      flex-wrap: wrap;
       justify-content: space-between;
-      gap: 10px;
-      border-bottom: 2px solid #f97316;
+      flex-wrap: wrap;
+      gap: 8px;
     }
-    .title-section h1 {
-      font-size: 1.3rem;
-      font-weight: 800;
-      background: linear-gradient(135deg, #fff, #fcd34d);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
+    .header h1 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: white;
       display: flex;
       align-items: center;
       gap: 6px;
     }
-    .title-section h1 span {
-      background: linear-gradient(145deg, #f97316, #ea580c);
-      font-size: 0.7rem;
-      padding: 0.2rem 0.7rem;
-      border-radius: 40px;
-      color: white;
-    }
-    .creator-badge {
-      background: rgba(255,255,255,0.12);
-      backdrop-filter: blur(4px);
-      padding: 0.25rem 0.8rem;
-      border-radius: 60px;
-      font-size: 0.7rem;
-      font-weight: 500;
-      border-left: 2px solid #f97316;
-    }
-    .creator-badge strong { color: #fbbf24; }
-
-    /* Level Selector */
-    .level-selector {
-      padding: 10px 1rem;
-      background: #fef9e6;
-      border-bottom: 1px solid #ffe2b5;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-    .level-label {
-      font-size: 0.75rem;
-      font-weight: 700;
-      color: #9a3412;
-    }
-    .skill-btn {
-      background: #f1f5f9;
-      border: none;
-      padding: 5px 14px;
-      border-radius: 40px;
-      font-size: 0.7rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s;
-      color: #334155;
-    }
-    .skill-btn.active {
+    .header h1 span {
       background: #f97316;
-      color: white;
-      box-shadow: 0 2px 6px rgba(249,115,22,0.3);
-    }
-    .dashboard { display: flex; flex-wrap: wrap; }
-    .knowledge-base {
-      flex: 1.2;
-      background: #fef9e6;
-      border-right: 1px solid #ffe2b5;
-      padding: 1rem;
-      max-height: 360px;
-      overflow-y: auto;
-    }
-    .knowledge-base h3 {
-      font-size: 1rem;
-      font-weight: 700;
-      color: #9a3412;
-      border-left: 4px solid #f97316;
-      padding-left: 12px;
-      margin-bottom: 0.9rem;
-    }
-    .faq-list { display: flex; flex-direction: column; gap: 0.75rem; }
-    .faq-item {
-      background: white;
-      border-radius: 1rem;
-      padding: 0.7rem 0.9rem;
-      border: 1px solid #ffdead;
-    }
-    .faq-question {
-      font-weight: 700;
-      color: #1e293b;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 8px;
-      font-size: 0.8rem;
-    }
-    .ask-btn {
-      background: linear-gradient(135deg, #f97316, #ea580c);
-      border: none;
-      border-radius: 40px;
-      padding: 0.25rem 0.9rem;
-      font-size: 0.65rem;
-      font-weight: 600;
-      color: white;
-      cursor: pointer;
-    }
-    .faq-answer {
-      margin-top: 8px;
-      font-size: 0.75rem;
-      color: #2d3a4b;
-      line-height: 1.4;
-      border-top: 1px dashed #fbc48b;
-      padding-top: 8px;
-      display: none;
-      background: #fff6e5;
-      border-radius: 10px;
-      padding: 8px;
-    }
-    .faq-answer.show { display: block; }
-
-    /* Chat Area */
-    .chat-area { flex: 1.8; display: flex; flex-direction: column; background: #ffffff; }
-    .chat-messages {
-      flex: 1;
-      min-height: 400px;
-      max-height: 440px;
-      overflow-y: auto;
-      padding: 1rem;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      background: #fdfdfd;
-    }
-    .message { display: flex; align-items: flex-start; gap: 8px; animation: slideUp 0.2s ease-out; }
-    @keyframes slideUp { from { opacity: 0; transform: translateY(8px);} to { opacity: 1; transform: translateY(0);} }
-    .avatar {
-      width: 32px; height: 32px; border-radius: 50%;
-      display: inline-flex; align-items: center; justify-content: center;
-      font-size: 1rem; background: #0f172a; color: white; flex-shrink: 0;
-    }
-    .user-message { flex-direction: row-reverse; }
-    .user-message .bubble { background: linear-gradient(145deg, #f97316, #ea580c); color: white; border-radius: 1.2rem 1.2rem 0.4rem 1.2rem; }
-    .bot-message .bubble { background: #eef2ff; color: #0c0a2a; border-radius: 1.2rem 1.2rem 1.2rem 0.4rem; border: 1px solid #e2e8f0; }
-    .bubble { max-width: 82%; padding: 0.65rem 1rem; font-size: 0.85rem; line-height: 1.45; word-break: break-word; }
-    
-    /* Enhanced Suggestions Area */
-    .suggestions-panel {
-      background: #ffffff;
-      border-top: 1px solid #f0ede8;
-      padding: 12px 1rem;
-    }
-    .suggestion-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 10px;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-    .suggestion-header span {
-      font-size: 0.7rem;
-      font-weight: 600;
-      color: #f97316;
-      background: #fff3e6;
-      padding: 3px 10px;
+      font-size: 0.55rem;
+      padding: 2px 8px;
       border-radius: 20px;
     }
-    .suggestions-carousel {
+    .lang-buttons {
       display: flex;
-      overflow-x: auto;
-      gap: 10px;
-      padding: 6px 0 12px;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
+      gap: 6px;
     }
-    .suggestion-chip {
-      scroll-snap-align: start;
-      background: linear-gradient(135deg, #f8fafc, #f1f5f9);
-      border: 1px solid #e2e8f0;
-      border-radius: 40px;
-      padding: 8px 18px;
-      font-size: 0.75rem;
+    .lang-btn {
+      background: rgba(255,255,255,0.15);
+      border: none;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.6rem;
       font-weight: 600;
       cursor: pointer;
+      color: white;
       transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: #f97316;
+      color: white;
+    }
+    .creator {
+      background: rgba(255,255,255,0.1);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.55rem;
+      color: #fbbf24;
+    }
+
+    .mode-bar {
+      background: #fef9e6;
+      padding: 8px 12px;
+      display: flex;
+      gap: 10px;
+      border-bottom: 1px solid #ffe2b5;
+    }
+    .mode-btn {
+      flex: 1;
+      background: #f1f5f9;
+      border: none;
+      padding: 8px;
+      border-radius: 30px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    .mode-btn.active {
+      background: #f97316;
+      color: white;
+    }
+
+    .level-bar {
+      background: #fef9e6;
+      padding: 8px 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #ffe2b5;
+    }
+    .level-label {
+      font-size: 0.65rem;
+      font-weight: 700;
+      color: #9a3412;
+    }
+    .level-btn {
+      background: #f1f5f9;
+      border: none;
+      padding: 4px 12px;
+      border-radius: 30px;
+      font-size: 0.6rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .level-btn.active {
+      background: #f97316;
+      color: white;
+    }
+
+    .main-grid {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .topics-section {
+      background: #fef9e6;
+      padding: 10px 12px;
+      border-bottom: 1px solid #ffe2b5;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+    .topics-section h3 {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #9a3412;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .topics-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .topic-tag {
+      background: white;
+      border: 1px solid #ffdead;
+      border-radius: 30px;
+      padding: 4px 10px;
+      font-size: 0.65rem;
+      font-weight: 600;
       color: #1e293b;
-      white-space: nowrap;
+      cursor: pointer;
+      transition: all 0.15s;
       display: inline-flex;
       align-items: center;
       gap: 6px;
     }
-    .suggestion-chip:hover, .suggestion-chip:active { background: #f97316; color: white; transform: scale(0.97); border-color: #f97316; }
-    .difficulty-badge {
-      font-size: 0.6rem;
-      padding: 2px 6px;
-      border-radius: 30px;
-      background: #e2e8f0;
-      margin-left: 6px;
+    .topic-tag:hover {
+      background: #f97316;
+      color: white;
+      border-color: #f97316;
     }
-    .difficulty-easy { background: #22c55e20; color: #15803d; }
-    .difficulty-intermediate { background: #f9731620; color: #c2410c; }
-    .difficulty-advanced { background: #8b5cf620; color: #5b21b6; }
-    .recent-section { margin-top: 6px; font-size: 0.65rem; color: #64748b; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
-    .recent-chip { background: #f1f5f9; padding: 3px 10px; border-radius: 30px; cursor: pointer; font-size: 0.65rem; }
-    
-    .input-area {
-      padding: 0.8rem 1rem;
+
+    .chat-area {
       background: white;
-      border-top: 1px solid #f1f1ef;
       display: flex;
+      flex-direction: column;
+      height: 450px;
+    }
+    .messages {
+      flex: 1;
+      overflow-y: auto;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
       gap: 10px;
+    }
+    .msg {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      animation: fadeIn 0.2s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    .msg-user {
+      flex-direction: row-reverse;
+    }
+    .avatar {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      flex-shrink: 0;
+      background: #0f172a;
+      color: white;
+    }
+    .bubble {
+      max-width: 85%;
+      padding: 10px 14px;
+      font-size: 0.78rem;
+      line-height: 1.5;
+      border-radius: 18px;
+      word-break: break-word;
+    }
+    .msg-user .bubble {
+      background: #f97316;
+      color: white;
+      border-radius: 18px 18px 4px 18px;
+    }
+    .msg-bot .bubble {
+      background: #eef2ff;
+      color: #0c0a2a;
+      border-radius: 18px 18px 18px 4px;
+      border: 1px solid #e2e8f0;
+    }
+
+    .suggestions-area {
+      background: white;
+      border-top: 1px solid #f0ede8;
+      padding: 8px 12px;
+    }
+    .suggestions-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+      font-size: 0.6rem;
+      color: #f97316;
+      font-weight: 600;
+    }
+    .chips-scroll {
+      display: flex;
+      overflow-x: auto;
+      gap: 8px;
+      padding: 4px 0 8px;
+      -webkit-overflow-scrolling: touch;
+    }
+    .chips-scroll::-webkit-scrollbar {
+      height: 3px;
+    }
+    .chip {
+      background: #f1f5f9;
+      border-radius: 30px;
+      padding: 5px 14px;
+      font-size: 0.65rem;
+      font-weight: 500;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: all 0.15s;
+      color: #1e293b;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .chip:active {
+      background: #f97316;
+      color: white;
+      transform: scale(0.96);
+    }
+
+    .input-area {
+      padding: 10px 12px;
+      background: white;
+      border-top: 1px solid #e2e8f0;
+      display: flex;
+      gap: 8px;
       align-items: center;
     }
     .input-area input {
       flex: 1;
-      padding: 12px 16px;
+      padding: 10px 14px;
       border: 1px solid #e2e8f0;
-      border-radius: 60px;
-      font-size: 0.85rem;
+      border-radius: 30px;
+      font-size: 0.75rem;
       background: #fafcff;
+      font-family: inherit;
     }
-    .input-area input:focus { border-color: #f97316; box-shadow: 0 0 0 3px rgba(249,115,22,0.2); outline: none; }
+    .input-area input:focus {
+      outline: none;
+      border-color: #f97316;
+      box-shadow: 0 0 0 2px rgba(249,115,22,0.2);
+    }
     .input-area button {
       background: #0f172a;
       border: none;
       color: white;
       padding: 0 18px;
-      height: 44px;
-      border-radius: 60px;
-      font-weight: 700;
+      height: 38px;
+      border-radius: 30px;
+      font-size: 0.7rem;
+      font-weight: 600;
       cursor: pointer;
     }
     footer {
-      font-size: 0.65rem;
-      text-align: center;
-      padding: 0.7rem;
       background: #f8fafc;
-      color: #475569;
+      text-align: center;
+      padding: 8px;
+      font-size: 0.55rem;
+      color: #64748b;
       border-top: 1px solid #eef2f0;
     }
-    @media (max-width: 760px) {
-      .dashboard { flex-direction: column; }
-      .knowledge-base { max-height: 240px; }
-      .chat-messages { min-height: 360px; max-height: 400px; }
-      .suggestion-chip { font-size: 0.7rem; padding: 6px 14px; }
+    .typing {
+      background: #eef2ff;
+      padding: 6px 12px;
+      border-radius: 18px;
+      font-size: 0.7rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
     }
+
     @media (min-width: 768px) {
-      .knowledge-base { max-height: 560px; }
-      .chat-messages { min-height: 500px; }
+      .chat-container { max-width: 650px; }
+      .chat-area { height: 480px; }
     }
-    .typing-indicator { background: #eef2ff; padding: 10px 16px; border-radius: 20px; display: inline-flex; align-items: center; gap: 6px; }
   </style>
 </head>
 <body>
-<div class="chat-card">
-  <div class="cover-hero">
-    <img src="https://i.postimg.cc/xdvqVHgB/seo.png" alt="SEO Genius Pro Cover">
-    <div class="cover-overlay"><h2>🔍 SEO Genius Pro</h2><p>Smart Suggestions • Context-Aware AI</p></div>
+<div class="chat-container">
+  <div class="cover">
+    <img src="https://i.postimg.cc/xdvqVHgB/seo.png" alt="SEO Genius">
+    <div class="cover-text">
+      <h2>🔍 SEO জিনিয়াস</h2>
+      <p>বিস্তারিত এসইও এ টু জেড • সার্ভিস কনসালট্যান্ট</p>
+    </div>
   </div>
   <div class="header">
-    <div class="title-section"><h1>📈 SEO Genius <span>AI+</span></h1><div style="font-size:0.65rem; color:#cbd5e1;">Smart Learning • Adaptive Suggestions</div></div>
-    <div class="creator-badge">✨ Created by <strong>MD. Ashraful Alam</strong> ✨</div>
-  </div>
-  <div class="level-selector">
-    <span class="level-label">📊 Your skill level:</span>
-    <button class="skill-btn" data-level="beginner">🌱 Beginner</button>
-    <button class="skill-btn" data-level="intermediate">📚 Intermediate</button>
-    <button class="skill-btn" data-level="advanced">🚀 Advanced</button>
-  </div>
-  <div class="dashboard">
-    <div class="knowledge-base">
-      <h3>📘 SEO Master Vault</h3>
-      <div class="faq-list" id="faqContainer"></div>
-      <div style="margin-top: 10px; font-size: 0.65rem; text-align:center; color:#b45309;">🔥 50+ advanced topics</div>
+    <h1>📈 SEO জিনিয়াস <span>AI+</span></h1>
+    <div style="display: flex; gap: 8px; align-items: center;">
+      <div class="lang-buttons">
+        <button class="lang-btn active" data-lang="bn">বাংলা</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <div class="creator">✨ by <strong>MD. Ashraful Alam</strong></div>
     </div>
+  </div>
+  
+  <div class="mode-bar">
+    <button class="mode-btn active" data-mode="learn">📚 এসইও শিখুন (Learn)</button>
+    <button class="mode-btn" data-mode="service">💼 সার্ভিস নিন (Service)</button>
+  </div>
+  
+  <div class="level-bar">
+    <span class="level-label" id="levelLabelText">📊 আপনার দক্ষতা স্তর:</span>
+    <button class="level-btn" data-level="beginner">🌱 বিগিনার</button>
+    <button class="level-btn" data-level="intermediate">📚 ইন্টারমিডিয়েট</button>
+    <button class="level-btn" data-level="advanced">🚀 অ্যাডভান্সড</button>
+  </div>
+  
+  <div class="main-grid">
+    <div class="topics-section">
+      <h3 id="topicsTitle">📘 এসইও এ টু জেড টপিকস</h3>
+      <div class="topics-list" id="topicsList"></div>
+    </div>
+    
     <div class="chat-area">
-      <div class="chat-messages" id="chatMessages">
-        <div class="message bot-message">
-          <div class="avatar">🧠</div>
-          <div class="bubble"><strong>🚀 Welcome to SEO Genius Pro!</strong><br>I'm your smart SEO assistant with adaptive suggestions. Ask me anything about SEO, and I'll provide deep insights.<br><br>👤 Created by <strong>MD. Ashraful Alam</strong><br>💡 Try clicking any suggestion chip below!</div>
+      <div class="messages" id="messages">
+        <div class="msg msg-bot" id="welcomeMsg">
+          <div class="avatar">🤖</div>
+          <div class="bubble"><strong>স্বাগতম! আমি SEO জিনিয়াস।</strong><br>
+          📚 <strong>বিস্তারিত এসইও শিখুন:</strong> এ টু জেড সব বিষয় ডিটেইল সহ<br>
+          💼 <strong>সার্ভিস নিন:</strong> আপনার ওয়েবসাইটের জন্য এসইও পরামর্শ<br>
+          👤 নির্মাতা: <strong>MD. Ashraful Alam</strong><br>
+          👇 নিচের টপিকস বা সাজেশন ক্লিক করুন।</div>
         </div>
       </div>
-      <div class="suggestions-panel" id="suggestionsPanel">
-        <div class="suggestion-header">
-          <span>✨ Smart Suggestions</span>
-          <div class="recent-section" id="recentSection"></div>
+      <div class="suggestions-area">
+        <div class="suggestions-header">
+          <span id="suggestionsLabel">✨ স্মার্ট সাজেশন</span>
         </div>
-        <div class="suggestions-carousel" id="suggestionsCarousel"></div>
+        <div class="chips-scroll" id="chipsContainer"></div>
       </div>
       <div class="input-area">
-        <input type="text" id="userInput" placeholder="Ask any SEO question... e.g., 'What is entity SEO?'" autocomplete="off">
-        <button id="sendBtn">➤ Send</button>
+        <input type="text" id="input" placeholder="এসইও প্রশ্ন লিখুন... যেমন 'এসইও কি?' অথবা 'ব্যাকলিংক বিস্তারিত'" autocomplete="off">
+        <button id="sendBtn">পাঠান</button>
       </div>
     </div>
   </div>
-  <footer>⚡ SEO Genius Pro by MD. Ashraful Alam — Adaptive suggestions, difficulty levels, recent history, context-aware prompts</footer>
+  <footer>⚡ SEO জিনিয়াস by MD. Ashraful Alam • বিস্তারিত এসইও এ টু জেড • ফ্রি এসইও কনসালটেন্সি</footer>
 </div>
 
 <script>
-  // -------------------- ADVANCED SEO KNOWLEDGE BASE --------------------
-  const seoDatabase = {
-    "who created you": "I was created by **MD. Ashraful Alam** — a passionate SEO architect and full-stack developer. Ashraful designed me with smart suggestions, context-awareness, and deep SEO expertise.",
-    "what is seo": "SEO (Search Engine Optimization) is the practice of improving website visibility in organic search. Modern SEO includes **technical architecture, content relevance, E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness)**, and authority building via backlinks.",
-    "topical authority": "Topical authority means becoming the go-to resource for a subject. Build pillar pages, topic clusters, semantic interlinking, and cover subtopics deeply. Google rewards comprehensive entities.",
-    "core web vitals": "Core Web Vitals: LCP (<2.5s), INP (<200ms), CLS (<0.1). Optimize images, use CDN, reduce JS, and ensure stable layout. Critical for ranking.",
-    "what is e e a t": "E-E-A-T = Experience, Expertise, Authoritativeness, Trustworthiness. Google's quality guidelines for YMYL content. Show credentials, cite sources, build reputation.",
-    "entity seo": "Entity SEO uses schema markup to define people, places, things. Helps Google understand relationships. Use JSON-LD and build knowledge panel presence.",
-    "sge optimization": "Optimize for Google SGE: Use structured answers, lists, tables, FAQ schema. Write natural conversational content. Earn citations from authoritative sources.",
-    "backlinks advanced": "High-quality backlinks via digital PR, broken link building, original research. Avoid PBNs. Focus on relevance, domain authority, and contextual anchors.",
-    "technical seo checklist": "Check: robots.txt, XML sitemap, mobile-friendly, HTTPS, Core Web Vitals, structured data, canonical tags, no orphan pages, log file analysis.",
-    "seo penalty recovery": "Identify manual action via Search Console. Remove toxic links, disavow if needed. For algorithmic (HCU), delete low-value content, improve E-E-A-T, add author bios.",
-    "seo kpis 2025": "Track organic clicks, SGE impression share, engagement rate (time on site), INP, branded search volume, link growth velocity, conversion per cluster.",
-    "local seo advanced": "Optimize GBP with posts, Q&A, products. Get local citations, localBusiness schema, geotagged images. Encourage reviews with keywords.",
-    "voice search seo": "Target long-tail question phrases, FAQ schema, featured snippets. Write conversationally. 40% of voice answers come from position zero.",
-    "seo for ecommerce": "Optimize product variants with canonical, unique descriptions, breadcrumb schema, user reviews, faceted navigation control, internal linking from blog to products."
+  // ============ DETAILED SEO KNOWLEDGE BASE (A to Z with full answers) ============
+  const seoDB = {
+    // Question 1: What is SEO? - Detailed Answer
+    "what is seo": "📘 **What is SEO?**\n\nSEO (Search Engine Optimization) is the process of improving a website so it can rank higher on search engines like Google. When someone searches for information, products, or services, search engines show a list of results. SEO helps your website appear in those results, especially on the first page, where most users click.\n\nSEO works by helping search engines understand your website. Search engines use bots (also called crawlers) to scan your site and analyze your content. If your website provides useful, clear, and well-structured information, it has a better chance of ranking higher.\n\n**There are three main parts of SEO:**\n1. **On-page SEO** - optimizing content, keywords, titles, and images\n2. **Off-page SEO** - backlinks and building authority from other websites\n3. **Technical SEO** - website speed, mobile-friendliness, and proper coding\n\nSEO is important because it brings organic traffic, meaning visitors come to your site without paid ads. It is a long-term strategy that builds trust and visibility over time.\n\nIn simple terms, SEO is about making your website easy for both users and search engines. When done correctly, it helps you reach the right audience, increase traffic, and grow your online presence without spending money on ads.",
+    
+    // Question 2: Why is SEO important?
+    "why seo important": "📈 **Why is SEO Important?**\n\nSEO is important because it helps your website become visible to people searching online. Every day, millions of searches happen on Google, and SEO ensures your website appears in front of the right audience at the right time.\n\n**Key Benefits of SEO:**\n\n✅ **Free Traffic** - Unlike paid ads, where you must spend money continuously, SEO brings visitors organically. Once your website ranks well, it can keep getting traffic for a long time without additional cost.\n\n✅ **Builds Trust** - Users usually trust websites that appear on the first page of search results. High rankings make your website look more reliable and professional.\n\n✅ **Better User Experience** - SEO improves your website's speed, design, and mobile usability. This makes it easier for visitors to navigate your site and find what they need.\n\n✅ **Understand Your Audience** - By researching keywords, you can learn what people are searching for and create content that matches their needs.\n\nIn today's digital world, competition is high. Without SEO, your website may remain invisible. With proper SEO, you can stand out, attract more visitors, and grow your business effectively.",
+    
+    // Question 3: What is a keyword?
+    "what is a keyword": "🔑 **What is a Keyword?**\n\nA keyword is a word or phrase that people type into search engines when they want to find something. For example, 'best laptop under $1000' is a keyword. Keywords are the foundation of SEO because they connect user searches with your content.\n\nSearch engines like Google use keywords to understand what your page is about. When your content includes relevant keywords, search engines are more likely to show your page to users searching for those terms.\n\n**Types of Keywords:**\n• **Short-tail keywords** - broad, like 'laptop' (high competition)\n• **Long-tail keywords** - specific, like 'best laptop for students in 2026' (lower competition, better targeting)\n\n**Best Practices:**\n✅ Place keywords naturally in titles, headings, and content\n✅ Avoid keyword stuffing (using too many keywords unnaturally)\n✅ Do keyword research to find search volume and user intent\n\nIn simple words, keywords act as a bridge between your website and users.",
+    
+    // Question 4: What is on-page SEO?
+    "what is on page seo": "📄 **What is On-Page SEO?**\n\nOn-page SEO refers to optimizing elements within your website to improve rankings. It focuses on content, structure, and HTML elements that help search engines like Google understand your pages.\n\n**Key Elements of On-Page SEO:**\n\n✅ **Content** - Most important part. Your content should be clear, useful, and relevant. It should answer users' questions and include keywords naturally.\n\n✅ **Title Tags & Meta Descriptions** - These appear in search results and influence whether users click your link.\n\n✅ **Headings (H1, H2, H3)** - Help organize your content and improve readability.\n\n✅ **Internal Links** - Connect different pages on your site and guide users.\n\n✅ **Image Optimization** - Adding alt text helps search engines understand images.\n\n✅ **Page Speed & Mobile-Friendliness** - A fast and responsive website provides better user experience.\n\nIn simple terms, on-page SEO is about making your website better for users and search engines.",
+    
+    // Question 5: What is off-page SEO?
+    "what is off page seo": "🔗 **What is Off-Page SEO?**\n\nOff-page SEO includes actions outside your website that improve rankings. It mainly focuses on building authority and trust.\n\n**Most Important Factor: Backlinks**\nA backlink is a link from another website to yours. Search engines like Google see backlinks as votes of confidence. Quality matters more than quantity. Links from trusted websites are more valuable.\n\n**Other Off-Page Factors:**\n✅ Social media sharing\n✅ Brand mentions\n✅ Online reputation\n✅ Guest posting (writing content for other sites and linking back to yours)\n\n**Why It Matters:**\nOff-page SEO tells search engines that others trust your content. The more quality backlinks you have, the higher your website can rank.\n\nIn simple terms, off-page SEO builds your website's reputation across the internet.",
+    
+    // Question 6: What is technical SEO?
+    "what is technical seo": "⚙️ **What is Technical SEO?**\n\nTechnical SEO focuses on improving the technical aspects of your website so search engines can crawl and index it properly.\n\n**Key Technical SEO Elements:**\n\n✅ **Website Speed** - Faster sites rank better\n✅ **Mobile-Friendliness** - Responsive design for all devices\n✅ **HTTPS** - Secure connection (SSL certificate)\n✅ **XML Sitemap** - Helps search engines find all your pages\n✅ **Robots.txt** - Guides search engine crawlers\n✅ **Structured Data** - Schema markup for rich results\n✅ **Fix Errors** - Broken links and duplicate content\n\n**Why It Matters:**\nSearch engines like Google prefer fast and well-structured websites. Technical SEO ensures your website works smoothly and can be properly indexed.\n\nIn simple terms, technical SEO is the foundation that helps search engines access, crawl, and understand your website.",
+    
+    // Question 7: What is a backlink?
+    "what is a backlink": "🔗 **What is a Backlink?**\n\nA backlink is a link from one website to another. It is one of the most important ranking factors in SEO.\n\n**Why Backlinks Matter:**\nSearch engines like Google use backlinks to measure trust and authority. When a trusted website links to yours, it's like a vote of confidence. The more quality backlinks you have, the higher your website can rank.\n\n**Types of Backlinks:**\n✅ **Dofollow** - Passes SEO value (link juice)\n✅ **Nofollow** - Does not pass SEO value\n\n**How to Get Quality Backlinks:**\n✅ Guest posting on reputable sites\n✅ Broken link building\n✅ Creating valuable content that others want to share\n✅ Digital PR and outreach\n\n**Warning:** Low-quality or spammy backlinks can harm your rankings. Always focus on quality over quantity.\n\nBacklinks act like recommendations from other websites, telling search engines that your content is valuable and trustworthy.",
+    
+    // Question 8: What is domain authority?
+    "what is domain authority": "📊 **What is Domain Authority?**\n\nDomain Authority (DA) is a score (from 1 to 100) developed by Moz that predicts how well a website will rank on search engines.\n\n**What Influences Domain Authority:**\n✅ Number and quality of backlinks\n✅ Content quality and relevance\n✅ Website age and trust\n✅ Technical SEO factors\n✅ User engagement metrics\n\n**Important Notes:**\n• Domain Authority is NOT an official Google ranking factor\n• It's useful for comparing websites and tracking progress\n• Higher authority means better chances of ranking\n• Scores are logarithmic (harder to increase from 70 to 80 than from 20 to 30)\n\n**How to Improve Domain Authority:**\n✅ Build high-quality backlinks\n✅ Create valuable, shareable content\n✅ Improve technical SEO\n✅ Remove spammy links\n\nIn simple terms, Domain Authority helps you understand your website's ranking potential compared to competitors.",
+    
+    // Additional SEO Topics
+    "core web vitals": "⚡ **Core Web Vitals**\n\nCore Web Vitals are Google's page experience metrics:\n\n✅ **LCP (Largest Contentful Paint)** - Loading speed, should be under 2.5 seconds\n✅ **INP (Interaction to Next Paint)** - Responsiveness, should be under 200ms\n✅ **CLS (Cumulative Layout Shift)** - Visual stability, should be under 0.1\n\nImprove them for better rankings and user experience.",
+    
+    "e e a t": "🎓 **E-E-A-T Explained**\n\nE-E-A-T stands for:\n✅ Experience - First-hand knowledge\n✅ Expertise - Professional skill\n✅ Authoritativeness - Industry recognition\n✅ Trustworthiness - Credibility and honesty\n\nGoogle uses these to evaluate content quality, especially for health, finance, and legal topics.",
+    
+    "local seo": "📍 **Local SEO**\n\nOptimize your business for local searches:\n✅ Google Business Profile optimization\n✅ Get positive customer reviews\n✅ Local citations (name, address, phone)\n✅ Location-specific content\n✅ Local backlinks from directories",
+    
+    "voice search": "🎤 **Voice Search SEO**\n\nOptimize for voice assistants:\n✅ Use conversational, natural language\n✅ Target question phrases (who, what, where, why, how)\n✅ Create FAQ content with schema\n✅ Aim for featured snippets (position zero)\n✅ 40% of voice answers come from featured snippets",
+    
+    "seo tools": "🛠️ **Popular SEO Tools**\n\n✅ Google Search Console - Free, essential for monitoring\n✅ Google Analytics - Track traffic and behavior\n✅ Ahrefs - Backlink analysis and keyword research\n✅ SEMrush - All-in-one SEO platform\n✅ Moz - Domain Authority and link building\n✅ Yoast SEO - WordPress optimization\n✅ Screaming Frog - Technical SEO audits",
+    
+    "seo audit": "📋 **SEO Audit Checklist**\n\n✅ Check technical issues (crawl errors, broken links)\n✅ Analyze site speed (Core Web Vitals)\n✅ Review on-page SEO (titles, meta, headings)\n✅ Check mobile-friendliness\n✅ Analyze backlink profile\n✅ Find duplicate content issues\n✅ Review XML sitemap and robots.txt",
+    
+    "seo strategy": "🎯 **SEO Strategy Guide**\n\n1️⃣ **Research** - Keyword research, competitor analysis\n2️⃣ **Plan** - Content calendar, link building goals\n3️⃣ **Execute** - Optimize pages, create content, build links\n4️⃣ **Monitor** - Track rankings, traffic, conversions\n5️⃣ **Improve** - Regular updates and adjustments"
   };
-  // Extended synonyms
-  function getSEOAnswer(query) {
-    let q = query.toLowerCase().trim().replace(/[?¿!]/g, '');
-    if (seoDatabase[q]) return seoDatabase[q];
-    const synonyms = { "who made you": "who created you", "creator": "who created you", "ashraful": "who created you", "eeat": "what is e e a t", "cwv": "core web vitals", "sge": "sge optimization", "knowledge graph": "entity seo", "local seo": "local seo advanced", "voice search": "voice search seo" };
-    for (let [syn, target] of Object.entries(synonyms)) if (q.includes(syn)) return seoDatabase[target];
-    for (let key in seoDatabase) if (q.includes(key)) return seoDatabase[key];
-    return "🤯 That's an insightful SEO question! I can help with **technical SEO, link building, Core Web Vitals, E-E-A-T, SGE, entity SEO, and more**. Could you rephrase? (Created by MD. Ashraful Alam)";
-  }
 
-  // ---------------- SMART SUGGESTIONS SYSTEM ----------------
+  // Bangla versions of detailed answers
+  const seoDB_bn = {
+    "what is seo_bn": `📘 **এসইও কি?**\n\nএসইও (সার্চ ইঞ্জিন অপটিমাইজেশন) হলো একটি ওয়েবসাইটকে উন্নত করার প্রক্রিয়া যাতে এটি গুগলের মতো সার্চ ইঞ্জিনে উচ্চ র্যাঙ্ক পেতে পারে। যখন কেউ তথ্য, পণ্য বা সেবা খোঁজে, সার্চ ইঞ্জিন ফলাফলের একটি তালিকা দেখায়। এসইও আপনার ওয়েবসাইটকে সেই ফলাফলে, বিশেষ করে প্রথম পৃষ্ঠায় দেখাতে সাহায্য করে, যেখানে অধিকাংশ ব্যবহারকারী ক্লিক করেন।\n\n**এসইওর তিনটি প্রধান অংশ:**\n১. **অন-পেজ এসইও** - কন্টেন্ট, কীওয়ার্ড, টাইটেল এবং ইমেজ অপটিমাইজ করা\n২. **অফ-পেজ এসইও** - ব্যাকলিংক এবং অন্যান্য ওয়েবসাইট থেকে কর্তৃত্ব তৈরি করা\n৩. **টেকনিক্যাল এসইও** - ওয়েবসাইটের গতি, মোবাইল-বান্ধবতা এবং সঠিক কোডিং\n\nসহজ ভাষায়, এসইও হলো আপনার ওয়েবসাইটকে ব্যবহারকারী এবং সার্চ ইঞ্জিন উভয়ের জন্য সহজ করে তোলা।`,
+
+    "why seo important_bn": `📈 **এসইও কেন গুরুত্বপূর্ণ?**\n\n✅ **ফ্রি ট্রাফিক** - একবার র্যাঙ্ক করলে দীর্ঘ সময় ট্রাফিক পেতে থাকেন\n✅ **বিশ্বাস তৈরি করে** - প্রথম পৃষ্ঠার ওয়েবসাইটগুলোকে ব্যবহারকারী বেশি বিশ্বাস করে\n✅ **ব্যবহারকারীর অভিজ্ঞতা ভালো করে** - স্পিড, ডিজাইন এবং মোবাইল ইউজেবিলিটি উন্নত করে\n✅ **অডিয়েন্স বোঝা যায়** - কীওয়ার্ড রিসার্চের মাধ্যমে জানেন মানুষ কী খুঁজছে`,
+
+    "what is a keyword_bn": `🔑 **কীওয়ার্ড কি?**\n\nকীওয়ার্ড হলো সেই শব্দ বা বাক্য যা মানুষ সার্চ ইঞ্জিনে টাইপ করে। যেমন 'সেরা ল্যাপটপ ২০২৬'।\n\n**কীওয়ার্ডের প্রকার:**\n• **শর্ট-টেইল** - ব্যাপক, যেমন 'ল্যাপটপ' (প্রতিযোগিতা বেশি)\n• **লং-টেইল** - নির্দিষ্ট, যেমন 'ছাত্রদের জন্য সেরা ল্যাপটপ' (প্রতিযোগিতা কম)\n\n**টিপস:** প্রাকৃতিকভাবে টাইটেল, হেডিং এবং কন্টেন্টে কীওয়ার্ড ব্যবহার করুন। কীওয়ার্ড স্টাফিং এড়িয়ে চলুন।`,
+
+    "what is on page seo_bn": `📄 **অন-পেজ এসইও কি?**\n\nঅন-পেজ এসইও হলো আপনার ওয়েবসাইটের ভিতরের এলিমেন্টগুলো অপটিমাইজ করা।\n\n**মূল উপাদান:**\n✅ **কন্টেন্ট** - পরিষ্কার, উপযোগী এবং প্রাসঙ্গিক হতে হবে\n✅ **টাইটেল ট্যাগ ও মেটা ডেসক্রিপশন** - সার্চ রেজাল্টে দেখায় এবং ক্লিক প্রভাবিত করে\n✅ **হেডিং (H1, H2, H3)** - কন্টেন্ট সংগঠিত করে\n✅ **ইন্টারনাল লিংক** - পেজগুলো সংযুক্ত করে\n✅ **ইমেজ অপটিমাইজেশন** - অল্ট টেক্সট যোগ করুন`,
+
+    "what is off page seo_bn": `🔗 **অফ-পেজ এসইও কি?**\n\nঅফ-পেজ এসইও হলো আপনার ওয়েবসাইটের বাইরের কার্যক্রম যা র্যাঙ্কিং উন্নত করে।\n\n**সবচেয়ে গুরুত্বপূর্ণ: ব্যাকলিংক**\nঅন্য ওয়েবসাইট থেকে আপনার সাইটে লিংক। গুগল ব্যাকলিংককে ভোট অফ কনফিডেন্স হিসেবে দেখে। কোয়ালিটি বেশি গুরুত্বপূর্ণ।\n\n**অন্যান্য ফ্যাক্টর:**\n✅ সোশ্যাল মিডিয়া শেয়ারিং\n✅ ব্র্যান্ড মেনশন\n✅ গেস্ট পোস্টিং`,
+
+    "what is technical seo_bn": `⚙️ **টেকনিক্যাল এসইও কি?**\n\nটেকনিক্যাল এসইও আপনার ওয়েবসাইটের টেকনিক্যাল দিক উন্নত করে যাতে সার্চ ইঞ্জিন সঠিকভাবে ক্রল এবং ইন্ডেক্স করতে পারে।\n\n**মূল উপাদান:**\n✅ ওয়েবসাইট স্পিড\n✅ মোবাইল-ফ্রেন্ডলি\n✅ এইচটিটিপিএস (সিকিউর সংযোগ)\n✅ এক্সএমএল সাইটম্যাপ\n✅ রোবটস.টিএক্সটি\n✅ স্ট্রাকচার্ড ডাটা\n✅ ব্রোকেন লিংক ও ডুপ্লিকেট কন্টেন্ট ঠিক করা`,
+
+    "what is a backlink_bn": `🔗 **ব্যাকলিংক কি?**\n\nব্যাকলিংক হলো এক ওয়েবসাইট থেকে আরেক ওয়েবসাইটে লিংক। এটি এসইওর সবচেয়ে গুরুত্বপূর্ণ র্যাঙ্কিং ফ্যাক্টরগুলোর একটি।\n\n**ব্যাকলিংকের প্রকার:**\n✅ **ডোফলো** - এসইও ভ্যালু পাস করে\n✅ **নোফলো** - এসইও ভ্যালু পাস করে না\n\n**কীভাবে কোয়ালিটি ব্যাকলিংক পাবেন:**\n✅ গেস্ট পোস্টিং\n✅ ব্রোকেন লিংক বিল্ডিং\n✅ ভ্যালুএবল কন্টেন্ট তৈরি করা\n✅ ডিজিটাল পিআর`,
+
+    "what is domain authority_bn": `📊 **ডোমেইন অথরিটি কি?**\n\nডোমেইন অথরিটি (DA) হলো Moz-এর তৈরি একটি স্কোর (১ থেকে ১০০) যা ভবিষ্যদ্বাণী করে আপনার ওয়েবসাইট কতটা ভালো র্যাঙ্ক করবে।\n\n**কী কী প্রভাব ফেলে:**\n✅ ব্যাকলিংকের সংখ্যা ও কোয়ালিটি\n✅ কন্টেন্টের মান\n✅ ওয়েবসাইটের বয়স ও বিশ্বাসযোগ্যতা\n✅ টেকনিক্যাল এসইও\n\n**মনে রাখবেন:** এটি গুগলের অফিসিয়াল র্যাঙ্কিং ফ্যাক্টর নয়, কিন্তু তুলনার জন্য উপযোগী।`
+  };
+
+  let currentLang = localStorage.getItem('seo_lang') || 'bn';
   let userLevel = localStorage.getItem('seo_level') || 'beginner';
-  let recentQuestions = JSON.parse(localStorage.getItem('seo_recent') || '[]');
-  let conversationContext = [];
+  let currentMode = localStorage.getItem('seo_mode') || 'learn';
 
-  const suggestionPools = {
-    beginner: [
-      { text: "What is SEO and why it matters?", difficulty: "easy", icon: "🌱" },
-      { text: "How do keywords work?", difficulty: "easy", icon: "🔑" },
-      { text: "What are meta tags?", difficulty: "easy", icon: "🏷️" },
-      { text: "Explain backlinks basics", difficulty: "easy", icon: "🔗" },
-      { text: "What is on-page SEO?", difficulty: "easy", icon: "📄" }
-    ],
-    intermediate: [
-      { text: "What is E-E-A-T in Google?", difficulty: "intermediate", icon: "🎓" },
-      { text: "Core Web Vitals explained", difficulty: "intermediate", icon: "⚡" },
-      { text: "How to do keyword clustering?", difficulty: "intermediate", icon: "📊" },
-      { text: "Internal linking strategies", difficulty: "intermediate", icon: "🔗" },
-      { text: "Technical SEO audit checklist", difficulty: "intermediate", icon: "🛠️" }
-    ],
-    advanced: [
-      { text: "Entity SEO & Knowledge Graph", difficulty: "advanced", icon: "🧠" },
-      { text: "Programmatic SEO at scale", difficulty: "advanced", icon: "⚙️" },
-      { text: "International hreflang implementation", difficulty: "advanced", icon: "🌍" },
-      { text: "SGE optimization tactics", difficulty: "advanced", icon: "🤖" },
-      { text: "Advanced backlink outreach", difficulty: "advanced", icon: "🎯" }
-    ]
-  };
-
-  const trendingQuestions = [
-    { text: "🔥 Google March 2025 update impact", difficulty: "intermediate", icon: "📢" },
-    { text: "📈 How to recover from HCU penalty?", difficulty: "advanced", icon: "⚠️" },
-    { text: "🤖 Best AI tools for SEO in 2025", difficulty: "intermediate", icon: "🛠️" }
-  ];
-
-  function getContextualSuggestions(lastAnswer) {
-    if (lastAnswer && lastAnswer.toLowerCase().includes("backlink")) {
-      return [
-        { text: "How to check backlink quality?", difficulty: "intermediate", icon: "🔍" },
-        { text: "Guest posting strategies", difficulty: "intermediate", icon: "✍️" },
-        { text: "Broken link building method", difficulty: "advanced", icon: "🔧" }
-      ];
+  function getAnswer(query) {
+    let q = query.toLowerCase().trim().replace(/[?¿!]/g, '');
+    
+    // Service mode check
+    if (currentMode === 'service' || q.includes('সার্ভিস') || q.includes('service') || q.includes('দাম') || q.includes('pricing')) {
+      if (currentLang === 'bn') {
+        return "💼 **এসইও সার্ভিস সমূহ:**\n\n✅ **অন-পেজ এসইও** - টাইটেল, মেটা, কন্টেন্ট অপটিমাইজেশন\n✅ **টেকনিক্যাল এসইও** - সাইট স্পিড, মোবাইল ফ্রেন্ডলি, স্কিমা\n✅ **ব্যাকলিংক বিল্ডিং** - গেস্ট পোস্ট, আউটরিচ\n✅ **কন্টেন্ট স্ট্র্যাটেজি** - কীওয়ার্ড রিসার্চ, ব্লগ প্ল্যানিং\n✅ **লোকাল এসইও** - জিবিপি সেটআপ, সাইটেশন\n✅ **এসইও অডিট** - সম্পূর্ণ ওয়েবসাইট অ্যানালাইসিস\n\n📞 **যোগাযোগ:** বিস্তারিত জানতে আপনার ওয়েবসাইটের তথ্য দিন।";
+      }
+      return "💼 **SEO Services:**\n\n✅ On-Page SEO\n✅ Technical SEO\n✅ Backlink Building\n✅ Content Strategy\n✅ Local SEO\n✅ SEO Audit\n\nContact for custom pricing based on your needs.";
     }
-    if (lastAnswer && lastAnswer.toLowerCase().includes("core web vitals")) {
-      return [
-        { text: "How to improve LCP?", difficulty: "intermediate", icon: "🚀" },
-        { text: "What causes CLS issues?", difficulty: "intermediate", icon: "📐" },
-        { text: "Best tools to measure CWV", difficulty: "easy", icon: "📏" }
-      ];
+    
+    // Keyword mapping for Bangla
+    const bnMapping = {
+      "এসইও কি": "what is seo",
+      "এসইও গুরুত্বপূর্ণ": "why seo important",
+      "কীওয়ার্ড": "what is a keyword",
+      "অন পেজ": "what is on page seo",
+      "অফ পেজ": "what is off page seo",
+      "টেকনিক্যাল": "what is technical seo",
+      "ব্যাকলিংক": "what is a backlink",
+      "ডোমেইন অথরিটি": "what is domain authority",
+      "কোর ওয়েব": "core web vitals",
+      "ইইএটি": "e e a t",
+      "লোকাল": "local seo",
+      "ভয়েস": "voice search",
+      "টুলস": "seo tools",
+      "অডিট": "seo audit",
+      "স্ট্র্যাটেজি": "seo strategy"
+    };
+    
+    for (let [bn, en] of Object.entries(bnMapping)) {
+      if (q.includes(bn)) {
+        if (currentLang === 'bn') {
+          const bnKey = en + '_bn';
+          return seoDB_bn[bnKey] || seoDB[en];
+        }
+        return seoDB[en];
+      }
     }
-    if (lastAnswer && lastAnswer.toLowerCase().includes("entity")) {
-      return [
-        { text: "Schema markup examples", difficulty: "advanced", icon: "🏷️" },
-        { text: "Building knowledge panel", difficulty: "advanced", icon: "📰" }
-      ];
+    
+    // Direct match English
+    for (let key in seoDB) {
+      if (q.includes(key) && !key.includes('_bn')) {
+        if (currentLang === 'bn') {
+          const bnKey = key + '_bn';
+          return seoDB_bn[bnKey] || seoDB[key];
+        }
+        return seoDB[key];
+      }
     }
-    return null;
+    
+    // Default response
+    if (currentLang === 'bn') {
+      return "📚 **বিস্তারিত এসইও জানতে চান?** আমি এসইওর সব বিষয় ডিটেইল সহ শেখাতে পারি। দয়া করে নিচের টপিকস থেকে যেকোনো একটি ক্লিক করুন অথবা লিখুন: 'এসইও কি', 'ব্যাকলিংক কি', 'অন-পেজ এসইও' ইত্যাদি।\n\n💼 **সার্ভিস নিতে চাইলে** উপরের 'সার্ভিস নিন' বাটনে ক্লিক করুন।";
+    }
+    return "📚 **Want detailed SEO answers?** Click any topic above or ask: 'What is SEO?', 'What are backlinks?', 'On-page SEO' etc.\n\n💼 **For Services** click 'Service' mode above.";
   }
 
-  function renderSuggestions() {
-    const carousel = document.getElementById('suggestionsCarousel');
-    const recentSection = document.getElementById('recentSection');
-    if (!carousel) return;
-    carousel.innerHTML = '';
-    let suggestions = [...suggestionPools[userLevel]];
-    const contextSuggest = conversationContext.length > 0 ? getContextualSuggestions(conversationContext[conversationContext.length-1]) : null;
-    if (contextSuggest) suggestions = [...contextSuggest, ...suggestions.slice(0, 3)];
-    // mix trending
-    suggestions = [...suggestions.slice(0, 4), ...trendingQuestions.slice(0, 2)];
-    suggestions.forEach(sug => {
-      const chip = document.createElement('div');
-      chip.className = 'suggestion-chip';
-      chip.innerHTML = `${sug.icon} ${sug.text} <span class="difficulty-badge difficulty-${sug.difficulty}">${sug.difficulty}</span>`;
-      chip.addEventListener('click', () => sendUserQuery(sug.text));
-      carousel.appendChild(chip);
+  // A to Z Topics List
+  const topicsEn = ["What is SEO?", "Why SEO important?", "What is a keyword?", "On-Page SEO", "Off-Page SEO", "Technical SEO", "What is backlink?", "Domain Authority", "Core Web Vitals", "E-E-A-T", "Local SEO", "Voice Search", "SEO Tools", "SEO Audit", "SEO Strategy"];
+  const topicsBn = ["এসইও কি?", "এসইও কেন গুরুত্বপূর্ণ?", "কীওয়ার্ড কি?", "অন-পেজ এসইও", "অফ-পেজ এসইও", "টেকনিক্যাল এসইও", "ব্যাকলিংক কি?", "ডোমেইন অথরিটি", "কোর ওয়েব ভাইটালস", "ই-ই-এ-টি", "লোকাল এসইও", "ভয়েস সার্চ", "এসইও টুলস", "এসইও অডিট", "এসইও স্ট্র্যাটেজি"];
+
+  function renderTopics() {
+    const container = document.getElementById('topicsList');
+    if (!container) return;
+    container.innerHTML = '';
+    const topics = currentLang === 'bn' ? topicsBn : topicsEn;
+    topics.forEach(topic => {
+      const tag = document.createElement('div');
+      tag.className = 'topic-tag';
+      tag.innerHTML = `📖 ${topic}`;
+      tag.addEventListener('click', () => sendMessage(topic));
+      container.appendChild(tag);
     });
-    // recent questions section
-    if (recentQuestions.length > 0) {
-      recentSection.innerHTML = `<span style="font-size:0.65rem;">🕒 Recent:</span> `;
-      recentQuestions.slice(0, 3).forEach(q => {
-        const recentChip = document.createElement('span');
-        recentChip.className = 'recent-chip';
-        recentChip.innerText = q.length > 35 ? q.slice(0, 32)+'...' : q;
-        recentChip.addEventListener('click', () => sendUserQuery(q));
-        recentSection.appendChild(recentChip);
-      });
-    } else recentSection.innerHTML = '<span style="font-size:0.65rem;">✨ Ask something to see recent</span>';
   }
 
-  function addToRecent(question) {
-    recentQuestions = [question, ...recentQuestions.filter(q => q !== question)].slice(0, 5);
-    localStorage.setItem('seo_recent', JSON.stringify(recentQuestions));
-    renderSuggestions();
+  function renderChips() {
+    const container = document.getElementById('chipsContainer');
+    if (!container) return;
+    container.innerHTML = '';
+    const chips = currentLang === 'bn' 
+      ? ["📘 এসইও কি?", "🔗 ব্যাকলিংক কি?", "📄 অন-পেজ এসইও", "⚙️ টেকনিক্যাল এসইও", "📊 ডোমেইন অথরিটি"]
+      : ["📘 What is SEO?", "🔗 What is backlink?", "📄 On-Page SEO", "⚙️ Technical SEO", "📊 Domain Authority"];
+    chips.forEach(chipText => {
+      const chip = document.createElement('div');
+      chip.className = 'chip';
+      chip.innerHTML = `✨ ${chipText}`;
+      chip.addEventListener('click', () => sendMessage(chipText));
+      container.appendChild(chip);
+    });
   }
 
-  // DOM Helpers
-  const chatContainer = document.getElementById("chatMessages");
-  const userInput = document.getElementById("userInput");
-  const sendBtn = document.getElementById("sendBtn");
+  const messagesDiv = document.getElementById('messages');
+  const inputEl = document.getElementById('input');
+  const sendBtn = document.getElementById('sendBtn');
 
   function addMessage(text, isUser = false) {
-    const msgDiv = document.createElement("div");
-    msgDiv.className = `message ${isUser ? "user-message" : "bot-message"}`;
-    const avatarSpan = document.createElement("div");
-    avatarSpan.className = "avatar";
-    avatarSpan.innerText = isUser ? "👤" : "🧠";
-    const bubbleDiv = document.createElement("div");
-    bubbleDiv.className = "bubble";
-    let formatted = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-    bubbleDiv.innerHTML = formatted;
-    msgDiv.appendChild(avatarSpan);
-    msgDiv.appendChild(bubbleDiv);
-    chatContainer.appendChild(msgDiv);
-    chatContainer.scrollTop = chatContainer.scrollHeight;
+    const msgDiv = document.createElement('div');
+    msgDiv.className = `msg ${isUser ? 'msg-user' : 'msg-bot'}`;
+    const avatar = document.createElement('div');
+    avatar.className = 'avatar';
+    avatar.innerText = isUser ? '👤' : '🤖';
+    const bubble = document.createElement('div');
+    bubble.className = 'bubble';
+    if (!isUser) {
+      let formatted = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>');
+      bubble.innerHTML = formatted;
+    } else {
+      bubble.innerText = text;
+    }
+    msgDiv.appendChild(avatar);
+    msgDiv.appendChild(bubble);
+    messagesDiv.appendChild(msgDiv);
+    messagesDiv.scrollTop = messagesDiv.scrollHeight;
   }
 
-  async function sendUserQuery(queryText) {
-    if (!queryText.trim()) return;
-    addMessage(queryText, true);
-    userInput.value = "";
-    addToRecent(queryText);
-    const typingDiv = document.createElement("div");
-    typingDiv.className = "message bot-message";
-    typingDiv.innerHTML = `<div class="avatar">🧠</div><div class="bubble typing-indicator">🔍 Analyzing & generating smart insights<span>.</span><span>.</span><span>.</span></div>`;
-    chatContainer.appendChild(typingDiv);
-    chatContainer.scrollTop = chatContainer.scrollHeight;
+  async function sendMessage(query) {
+    if (!query.trim()) return;
+    addMessage(query, true);
+    inputEl.value = '';
+    
+    const typingDiv = document.createElement('div');
+    typingDiv.className = 'msg msg-bot';
+    typingDiv.innerHTML = `<div class="avatar">🤖</div><div class="bubble typing">🔍 বিস্তারিত উত্তর দিচ্ছি<span>.</span><span>.</span><span>.</span></div>`;
+    messagesDiv.appendChild(typingDiv);
+    messagesDiv.scrollTop = messagesDiv.scrollHeight;
+    
     await new Promise(r => setTimeout(r, 500));
-    const answer = getSEOAnswer(queryText);
-    chatContainer.removeChild(typingDiv);
+    const answer = getAnswer(query);
+    messagesDiv.removeChild(typingDiv);
     addMessage(answer, false);
-    conversationContext.push(answer);
-    if (conversationContext.length > 6) conversationContext.shift();
-    renderSuggestions();
   }
 
-  sendBtn.addEventListener("click", () => sendUserQuery(userInput.value));
-  userInput.addEventListener("keypress", (e) => { if (e.key === "Enter") sendUserQuery(userInput.value); });
+  sendBtn.addEventListener('click', () => sendMessage(inputEl.value));
+  inputEl.addEventListener('keypress', (e) => { if (e.key === 'Enter') sendMessage(inputEl.value); });
+
+  // Mode selector
+  document.querySelectorAll('.mode-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentMode = btn.getAttribute('data-mode');
+      localStorage.setItem('seo_mode', currentMode);
+      renderChips();
+      const modeMsg = currentLang === 'bn' 
+        ? (currentMode === 'learn' ? '📚 **লার্নিং মোড:** বিস্তারিত এসইও শেখা শুরু করুন!' : '💼 **সার্ভিস মোড:** আপনার এসইও প্রয়োজন জানান!')
+        : (currentMode === 'learn' ? '📚 **Learning Mode:** Start detailed SEO learning!' : '💼 **Service Mode:** Tell me your SEO needs!');
+      addMessage(modeMsg, false);
+    });
+  });
 
   // Level selector
-  document.querySelectorAll('.skill-btn').forEach(btn => {
+  document.querySelectorAll('.level-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      document.querySelectorAll('.skill-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.level-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       userLevel = btn.getAttribute('data-level');
       localStorage.setItem('seo_level', userLevel);
-      renderSuggestions();
-      addMessage(`✅ Skill level updated to **${userLevel}**. I'll tailor suggestions accordingly!`, false);
     });
     if (btn.getAttribute('data-level') === userLevel) btn.classList.add('active');
   });
 
-  // FAQ Vault
-  const faqItems = [
-    { q: "What is Topical Authority?", aKey: "topical authority" },
-    { q: "Core Web Vitals explained", aKey: "core web vitals" },
-    { q: "E-E-A-T in depth", aKey: "what is e e a t" },
-    { q: "Entity SEO & Knowledge Graph", aKey: "entity seo" },
-    { q: "SGE Optimization tactics", aKey: "sge optimization" },
-    { q: "Advanced Backlink Strategies", aKey: "backlinks advanced" },
-    { q: "Technical SEO Checklist", aKey: "technical seo checklist" },
-    { q: "Local SEO Domination", aKey: "local seo advanced" },
-    { q: "Who created this bot?", aKey: "who created you" }
-  ];
-  const faqContainerDiv = document.getElementById("faqContainer");
-  function renderFAQ() {
-    faqContainerDiv.innerHTML = "";
-    faqItems.forEach(item => {
-      const div = document.createElement("div");
-      div.className = "faq-item";
-      const qDiv = document.createElement("div");
-      qDiv.className = "faq-question";
-      qDiv.innerHTML = `<span>💡 ${item.q}</span> <button class="ask-btn">Ask</button>`;
-      const ansDiv = document.createElement("div");
-      ansDiv.className = "faq-answer";
-      ansDiv.innerText = seoDatabase[item.aKey] || getSEOAnswer(item.q);
-      const btn = qDiv.querySelector(".ask-btn");
-      btn.addEventListener("click", (e) => { e.stopPropagation(); sendUserQuery(item.q); });
-      qDiv.addEventListener("click", (e) => { if (e.target !== btn) ansDiv.classList.toggle("show"); });
-      div.appendChild(qDiv); div.appendChild(ansDiv);
-      faqContainerDiv.appendChild(div);
-    });
+  // Language switcher
+  function updateUILanguage() {
+    inputEl.placeholder = currentLang === 'bn' ? 'এসইও প্রশ্ন লিখুন... যেমন "এসইও কি?" অথবা "ব্যাকলিংক বিস্তারিত"' : 'Ask SEO question... e.g., "What is SEO?" or "Backlinks details"';
+    document.getElementById('levelLabelText').innerText = currentLang === 'bn' ? '📊 আপনার দক্ষতা স্তর:' : '📊 Your skill level:';
+    document.getElementById('topicsTitle').innerHTML = currentLang === 'bn' ? '📘 এসইও এ টু জেড টপিকস (বিস্তারিত)' : '📘 SEO A to Z Topics (Detailed)';
+    document.getElementById('suggestionsLabel').innerText = currentLang === 'bn' ? '✨ স্মার্ট সাজেশন' : '✨ Smart Suggestions';
+    sendBtn.innerText = currentLang === 'bn' ? 'পাঠান' : 'Send';
+    
+    const welcomeBubble = document.querySelector('#welcomeMsg .bubble');
+    if (welcomeBubble) {
+      if (currentLang === 'bn') {
+        welcomeBubble.innerHTML = '<strong>স্বাগতম! আমি SEO জিনিয়াস।</strong><br>📚 <strong>বিস্তারিত এসইও শিখুন:</strong> এ টু জেড সব বিষয় ডিটেইল সহ<br>💼 <strong>সার্ভিস নিন:</strong> আপনার ওয়েবসাইটের জন্য এসইও পরামর্শ<br>👤 নির্মাতা: <strong>MD. Ashraful Alam</strong><br>👇 নিচের টপিকস বা সাজেশন ক্লিক করুন।';
+      } else {
+        welcomeBubble.innerHTML = '<strong>Welcome! I\'m SEO Genius.</strong><br>📚 <strong>Learn SEO in Detail:</strong> A to Z topics with full explanations<br>💼 <strong>Get Service:</strong> SEO consultation for your website<br>👤 Creator: <strong>MD. Ashraful Alam</strong><br>👇 Click topics or suggestions below.';
+      }
+    }
+    
+    renderTopics();
+    renderChips();
   }
-  renderFAQ();
-  renderSuggestions();
+
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentLang = btn.getAttribute('data-lang');
+      localStorage.setItem('seo_lang', currentLang);
+      updateUILanguage();
+    });
+  });
+
+  // Initialize
+  renderTopics();
+  renderChips();
+  updateUILanguage();
 </script>
 </body>
 </html>
